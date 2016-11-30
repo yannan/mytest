@@ -1,20 +1,13 @@
 .wrap {
     height: 100%;
 }
-.login-wrap {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 1000px;
-    height: 100%;
-    margin-left: -500px;
-}
 .login-box {
     position: absolute;
     top: 50%;
-    right: 0;
+    left: 50%;
     width: 310px;
     margin-top: -200px;
+    /*margin-right: -160px;*/
     padding: 25px 25px 25px;
     background: #ffffff;
     border-radius: 3px;
