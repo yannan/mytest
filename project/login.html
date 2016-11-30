@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>登陆</title>
+    <link rel="stylesheet" href="static/common/css/base.css">
+    <link rel="stylesheet" href="static/login/css/login.css">
+    <link rel="stylesheet" href="static/login/css/javascript.fullPage.css">
 </head>
 <body>
-$END$
+    <div class="wrap">
+        <div id="fullpage">
+            <div class="section " id="section0">
+
+            </div>
+            <div class="section" id="section1">
+
+            </div>
+            <div class="section" id="section2">
+
+            </div>
+        </div>
+        <div class="login-wrap">
+            <div class="login-box">
+                <h2 class="login-tit">用户登录</h2>
+                <div class="login-form">
+                    <div class="login-input">
+                        <input type="text" placeholder="用户名">
+                    </div>
+                    <div class="login-input mt20">
+                        <input type="password" placeholder="密码">
+                    </div>
+                    <div class="login-input mt20">
+                        <input type="text" placeholder="验证码">
+                        <div class="valicate-code">
+                            <img src="static/login/images/code.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="icon-refresh"></a>
+                    </div>
+                </div>
+                <div class="login-tips hide"><em>!</em>用户名密码不符合</div>
+
+                <a href="javascript:;" class="btn-login">登录</a>
+
+                <div class="login-help clearfix mt20">
+                    <a href="javascript:;" class="forget-psw fr">忘记密码？</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/common/js/jquery.min.js"></script>
+    <script src="static/login/js/javascript.fullPage.min.js"></script>
+    <script type="text/javascript">
+        fullpage.initialize('#fullpage', {
+            anchors: ['firstPage', 'secondPage', 'lastPage'],
+            css3: true,
+        });
+
+    </script>
 </body>
 </html>
