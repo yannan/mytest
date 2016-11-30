@@ -1,0 +1,137 @@
+.wrap {
+    height: 100%;
+}
+.login-wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1000px;
+    height: 100%;
+    margin-left: -500px;
+}
+.login-box {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 310px;
+    margin-top: -200px;
+    padding: 25px 25px 25px;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 999;
+}
+.login-tit {
+    color: #4b7dee;
+    font-size: 20px;
+}
+.login-form {
+    margin-top: 28px;
+}
+.login-input {
+    position: relative;
+}
+.login-input input {
+    width: 288px;
+    height: 38px;
+    padding: 0 10px;
+    border: solid 1px #dce0e7;
+    outline: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #999;
+    font-size: 14px;
+}
+.login-input input:focus {
+    border-color: #b6c9f5;
+}
+.valicate-code {
+    position: absolute;
+    top: 2px;
+    right: 42px;
+}
+.valicate-code img {
+    width: 61px;
+    height: 37px;
+    line-height: 0;
+    vertical-align: top;
+}
+.icon-refresh {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 42px;
+    height:38px;
+    background: url("../images/refresh.png") no-repeat center center #e9ecf2;
+}
+.icon-refresh:active {
+    background-color: #e4e3f2;
+}
+.login-tips {
+    margin-top:15px;
+    color: #4b7dee;
+    font-size: 14px;
+}
+.login-tips em {
+    padding-left: 4px;
+    padding-right:6px;
+}
+.btn-login {
+    display: block;
+    height: 50px;
+    margin-top:15px;
+    background: #4b7dee;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height:50px;
+    text-align: center;
+}
+.btn-login:hover {
+    background: #6390f5;
+}
+.forget-psw {
+    color: #4b7dee;
+    font-size: 14px;
+}
+.forget-psw:hover {
+    text-decoration: underline;
+}
+/* Section 1
+		 * --------------------------------------- */
+#section0{
+    background-color: #BFDA00;
+}
+#section0 h1{
+    color: #444;
+}
+#section0 p{
+    color: #333;
+    opacity: 0.4;
+}
+
+
+/* Section 2
+ * --------------------------------------- */
+#section1{
+    background-color: #2EBE21;
+}
+#section1 h1{
+    color: #fff;
+}
+#section1 p{
+    opacity: 0.8;
+}
+
+
+/* Section 3
+ * --------------------------------------- */
+#section2{
+    background-color: #2C3E50;
+}
+#section2 h1{
+    color: #F2F2F2;
+}
+#section2 p{
+    opacity: 0.6;
+}
