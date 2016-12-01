@@ -1,0 +1,34 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 100%;
+  background: #34353d;
+}
+.user-photo {
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: 40px auto 0;
+  border-radius: 50%;
+  background: url("../images/user.png") no-repeat;
+}
+.user-name {
+  margin-top: 15px;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+}
+.user-from {
+  color: #b6b6bf;
+  font-size: 14px;
+  text-align: center;
+}
+.user-menu {
+
+}
+.user-menu li {
+  display: inline-block;
+  padding: 0 10px;
+}
