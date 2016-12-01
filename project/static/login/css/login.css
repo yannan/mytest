@@ -116,15 +116,15 @@
     min-width: 1024px;
 }
 .banList li.banLi1 {
-    background: url("../images/bj1.jpg") no-repeat;
+    background: url("../images/bj1.jpg") center center no-repeat;
     background-size: cover;
 }
 .banList li.banLi2 {
-    background: url("../images/bj2.jpg") no-repeat;
+    background: url("../images/bj2.jpg") center center  no-repeat;
     background-size: cover;
 }
 .banList li.banLi3 {
-    background: url("../images/bj3.jpg") no-repeat;
+    background: url("../images/bj3.jpg") center center  no-repeat;
     background-size: cover;
 }
 .banLi-img {
@@ -164,4 +164,27 @@
     width: 242px;
     height: 60px;
     z-index: 999;
+}
+.code {
+    width: 80px;
+    font-family: Arial;
+    font-style: italic;
+    border: 0;
+    padding: 2px 3px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+.code:focus {
+    border: 0! important;
+}
+.unchanged {
+    border: 0;
+}
+.login-input #checkCode {
+    width: 60px;
+    height: 36px;
+    padding: 0;
+    border: 0;
+    color: #4b7dee;
+
 }

@@ -21,10 +21,8 @@
                         </div>
                     </li>
                     <li class="banLi2">
-                        <!--<a href=""><img src="static/login/images/bj2.jpg"></a>-->
                     </li>
                     <li class="banLi3 active">
-                        <!--<a href=""><img src="static/login/images/bj3.jpg"></a>-->
                     </li>
                 </ul>
             </div>
@@ -41,14 +39,14 @@
                         <input type="password" placeholder="密码">
                     </div>
                     <div class="login-input mt20">
-                        <input type="text" placeholder="验证码">
+                        <input type="text" placeholder="验证码" id="codeInput">
                         <div class="valicate-code">
-                            <img src="static/login/images/code.jpg" alt="">
+                            <input type="text" onclick="createCode()" readonly="readonly" id="checkCode" class="unchanged" />
                         </div>
                         <a href="javascript:;" class="icon-refresh"></a>
                     </div>
                 </div>
-                <div class="login-tips hide"><em>!</em>用户名密码不符合</div>
+                <div class="login-tips hide"><em>!</em><span>用户名密码不符合</span></div>
 
                 <a href="javascript:;" class="btn-login">登录</a>
 
@@ -58,9 +56,10 @@
             </div>
         </div>
     </div>
-    <div class="index-footer">版权归xx科技股份有限公司所有</div>
+    <div class="index-footer"><p>版权归xx科技股份有限公司所有</p><p>aaaaaaaaaa</p></div>
 
     <script src="static/common/js/jquery.min.js"></script>
     <script src="static/login/js/jquery.banner.js"></script>
+    <script src="static/login/js/code_validate.js"></script>
 </body>
 </html>
