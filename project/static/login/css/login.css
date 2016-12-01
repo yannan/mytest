@@ -1,10 +1,18 @@
 .wrap {
     height: 100%;
 }
+.login-wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1000px;
+    height: 100%;
+    margin-left: -500px;
+}
 .login-box {
     position: absolute;
     top: 50%;
-    left: 50%;
+    right: 0;
     width: 310px;
     margin-top: -200px;
     /*margin-right: -160px;*/
@@ -90,41 +98,29 @@
 .forget-psw:hover {
     text-decoration: underline;
 }
-/* Section 1
-		 * --------------------------------------- */
-#section0{
-    background-color: #BFDA00;
+.photo-slide,
+.banner,
+.banList  {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
-#section0 h1{
-    color: #444;
+.banList li{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
 }
-#section0 p{
-    color: #333;
-    opacity: 0.4;
+.banList li.banLi1 {
+    background: url("../images/bj1.jpg") no-repeat;
+    background-size: cover;
 }
-
-
-/* Section 2
- * --------------------------------------- */
-#section1{
-    background-color: #2EBE21;
+.banList li.banLi2 {
+    background: url("../images/bj2.jpg") no-repeat;
+    background-size: cover;
 }
-#section1 h1{
-    color: #fff;
-}
-#section1 p{
-    opacity: 0.8;
-}
-
-
-/* Section 3
- * --------------------------------------- */
-#section2{
-    background-color: #2C3E50;
-}
-#section2 h1{
-    color: #F2F2F2;
-}
-#section2 p{
-    opacity: 0.6;
+.banList li.banLi3 {
+    background: url("../images/bj3.jpg") no-repeat;
+    background-size: cover;
 }
