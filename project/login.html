@@ -5,56 +5,62 @@
     <title>登陆</title>
     <link rel="stylesheet" href="static/common/css/base.css">
     <link rel="stylesheet" href="static/login/css/login.css">
-    <link rel="stylesheet" href="static/login/css/javascript.fullPage.css">
 </head>
 <body>
     <div class="wrap">
-        <div id="fullpage">
-            <div class="section " id="section0">
-
-            </div>
-            <div class="section" id="section1">
-
-            </div>
-            <div class="section" id="section2">
-
+        <div class="index-logo">
+            <a href="javascript:;"><img src="static/login/images/logo.png" alt=""/></a>
+        </div>
+        <div class="photo-slide">
+            <div class="banner">
+                <ul class="banList">
+                    <li class="banLi1">
+                        <div class="banLi-img">
+                            <img src="static/login/images/info.png" alt=""/>
+                            <a href="javascript:;"></a>
+                        </div>
+                    </li>
+                    <li class="banLi2">
+                        <!--<a href=""><img src="static/login/images/bj2.jpg"></a>-->
+                    </li>
+                    <li class="banLi3 active">
+                        <!--<a href=""><img src="static/login/images/bj3.jpg"></a>-->
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="login-box">
-            <h2 class="login-tit">用户登录</h2>
-            <div class="login-form">
-                <div class="login-input">
-                    <input type="text" placeholder="用户名">
-                </div>
-                <div class="login-input mt20">
-                    <input type="password" placeholder="密码">
-                </div>
-                <div class="login-input mt20">
-                    <input type="text" placeholder="验证码">
-                    <div class="valicate-code">
-                        <img src="static/login/images/code.jpg" alt="">
+
+        <div class="login-wrap">
+            <div class="login-box">
+                <h2 class="login-tit">用户登录</h2>
+                <div class="login-form">
+                    <div class="login-input">
+                        <input type="text" placeholder="用户名">
                     </div>
-                    <a href="javascript:;" class="icon-refresh"></a>
+                    <div class="login-input mt20">
+                        <input type="password" placeholder="密码">
+                    </div>
+                    <div class="login-input mt20">
+                        <input type="text" placeholder="验证码">
+                        <div class="valicate-code">
+                            <img src="static/login/images/code.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="icon-refresh"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="login-tips hide"><em>!</em>用户名密码不符合</div>
+                <div class="login-tips hide"><em>!</em>用户名密码不符合</div>
 
-            <a href="javascript:;" class="btn-login">登录</a>
+                <a href="javascript:;" class="btn-login">登录</a>
 
-            <div class="login-help clearfix mt20">
-                <a href="javascript:;" class="forget-psw fr">忘记密码？</a>
+                <div class="login-help clearfix mt20">
+                    <a href="javascript:;" class="forget-psw fr">忘记密码？</a>
+                </div>
             </div>
         </div>
     </div>
+    <div class="index-footer">版权归xx科技股份有限公司所有</div>
 
     <script src="static/common/js/jquery.min.js"></script>
-    <script src="static/login/js/javascript.fullPage.js"></script>
-    <script type="text/javascript">
-        fullpage.initialize('#fullpage', {
-            anchors: ['firstPage', 'secondPage', 'lastPage'],
-            css3: true,
-        });
-
-    </script>
+    <script src="static/login/js/jquery.banner.js"></script>
 </body>
 </html>
