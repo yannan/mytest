@@ -15,11 +15,16 @@ html {
   height: 100%;
   background: #34353d; }
 
+.user-info {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background: #2b2c33; }
+
 .user-photo {
   display: block;
   width: 90px;
   height: 90px;
-  margin: 40px auto 0;
+  margin: 0 auto;
   border-radius: 50%;
   background: url("../images/user.png") no-repeat; }
 
@@ -33,6 +38,21 @@ html {
   color: #b6b6bf;
   font-size: 14px;
   text-align: center; }
+
+.user-menu {
+  margin-top: 15px;
+  text-align: center; }
+  .user-menu li {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 12px; }
+    .user-menu li a {
+      color: #5883ff;
+      font-size: 12px; }
+      .user-menu li a:hover {
+        color: #85a3fb; }
+    .user-menu li:first-child {
+      border-right: solid 2px #696972; }
 
 .user-menu li {
   display: inline-block;
