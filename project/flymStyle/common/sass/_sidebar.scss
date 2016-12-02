@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 160px;
-  height: 100%;
+  min-height: 100%;
   background: #34353d;
 }
 .user-info {
@@ -53,7 +53,133 @@
     }
   }
 }
-.user-menu li {
-  display: inline-block;
-  padding: 0 10px;
+.sidebar-menu {
+
+  li {
+    position: relative;
+    height: 48px;
+    border-bottom: solid 1px #303139;
+    font-size: 15px;
+    line-height: 48px;
+
+    >a {
+      color: #91989e;
+      display: block;
+      padding-left: 18px;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    .icon-tri {
+      position: relative;
+      top: -2px;
+      display: inline-block;
+      margin-left: 15px;
+      border-left: solid 4px #82828b;
+      border-top: solid 3px transparent;
+      border-bottom: solid 3px transparent;
+    }
+
+    .icon {
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      background: url("../images/icon_menu.png") no-repeat;
+
+      &-xqgl {
+        background-position: 0 0;
+      }
+
+      &-rsgl {
+        background-position: 0 -46px;
+      }
+
+      &-xsgl {
+        background-position: 0 -96px;
+      }
+
+      &-khgl {
+        background-position: 0 -142px;
+      }
+
+      &-jwgl {
+        background-position: 0 -192px;
+      }
+
+      &-xygl {
+        background-position: 0 -238px;
+      }
+
+      &-jxgl {
+        background-position: 0 -288px;
+      }
+
+      &-sjtj {
+        background-position: 0 -334px;
+      }
+
+      &-xtsz {
+        background-position: 0 -382px;
+      }
+
+      &-dot {
+        background: #ffffff;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        top: -3px;
+      }
+    }
+
+    &:hover {
+      background: #5883ff;
+      
+      >a {
+        color: #ffffff;
+
+        .icon-tri {
+          border-left: solid 4px #ffffff;
+        }
+      }
+
+      .icon {
+        background-position-x: -20px;
+      }
+    }
+
+    &.disabled {
+      a {
+        cursor: default;
+      }
+    }
+    
+    &.disabled:hover {
+      background: none;
+
+      >a {
+        color: #91989e;
+      }
+    }
+    
+  }
+
+  .sidebar-second {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 160px;
+    width: 160px;
+    background: #34353d;
+  }
+
+  li:hover {
+    .sidebar-second {
+      display: block;
+    }
+  }
 }

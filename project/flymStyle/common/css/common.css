@@ -14,7 +14,7 @@ html {
   top: 0;
   left: 0;
   width: 160px;
-  height: 100%;
+  min-height: 100%;
   background: #34353d;
 }
 
@@ -66,7 +66,102 @@ html {
   border-right: solid 2px #696972;
 }
 
-.user-menu li {
+.sidebar-menu li {
+  position: relative;
+  height: 48px;
+  border-bottom: solid 1px #303139;
+  font-size: 15px;
+  line-height: 48px;
+}
+.sidebar-menu li > a {
+  color: #91989e;
+  display: block;
+  padding-left: 18px;
+}
+.sidebar-menu li:last-child {
+  border-bottom: 0;
+}
+.sidebar-menu li .icon-tri {
+  position: relative;
+  top: -2px;
   display: inline-block;
-  padding: 0 10px;
+  margin-left: 15px;
+  border-left: solid 4px #82828b;
+  border-top: solid 3px transparent;
+  border-bottom: solid 3px transparent;
+}
+.sidebar-menu li .icon {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  background: url("../images/icon_menu.png") no-repeat;
+}
+.sidebar-menu li .icon-xqgl {
+  background-position: 0 0;
+}
+.sidebar-menu li .icon-rsgl {
+  background-position: 0 -46px;
+}
+.sidebar-menu li .icon-xsgl {
+  background-position: 0 -96px;
+}
+.sidebar-menu li .icon-khgl {
+  background-position: 0 -142px;
+}
+.sidebar-menu li .icon-jwgl {
+  background-position: 0 -192px;
+}
+.sidebar-menu li .icon-xygl {
+  background-position: 0 -238px;
+}
+.sidebar-menu li .icon-jxgl {
+  background-position: 0 -288px;
+}
+.sidebar-menu li .icon-sjtj {
+  background-position: 0 -334px;
+}
+.sidebar-menu li .icon-xtsz {
+  background-position: 0 -382px;
+}
+.sidebar-menu li .icon-dot {
+  background: #ffffff;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  top: -3px;
+}
+.sidebar-menu li:hover {
+  background: #5883ff;
+}
+.sidebar-menu li:hover > a {
+  color: #ffffff;
+}
+.sidebar-menu li:hover > a .icon-tri {
+  border-left: solid 4px #ffffff;
+}
+.sidebar-menu li:hover .icon {
+  background-position-x: -20px;
+}
+.sidebar-menu li.disabled a {
+  cursor: default;
+}
+.sidebar-menu li.disabled:hover {
+  background: none;
+}
+.sidebar-menu li.disabled:hover > a {
+  color: #91989e;
+}
+.sidebar-menu .sidebar-second {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 160px;
+  width: 160px;
+  background: #34353d;
+}
+.sidebar-menu li:hover .sidebar-second {
+  display: block;
 }
