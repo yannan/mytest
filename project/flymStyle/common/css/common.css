@@ -154,7 +154,8 @@ html {
 .sidebar-menu li.disabled:hover > a {
   color: #91989e;
 }
-.sidebar-menu .sidebar-second {
+.sidebar-menu .sidebar-second,
+.sidebar-menu .sidebar-third {
   display: none;
   position: absolute;
   top: 0;
@@ -162,6 +163,29 @@ html {
   width: 160px;
   background: #34353d;
 }
+.sidebar-menu .sidebar-third li {
+  text-align: center;
+}
+.sidebar-menu .sidebar-third li a {
+  padding-left: 0;
+}
 .sidebar-menu li:hover .sidebar-second {
   display: block;
+}
+.sidebar-menu li:hover .sidebar-second li:hover .sidebar-third {
+  display: block;
+}
+
+.right-area {
+  position: absolute;
+  top: 0;
+  left: 160px;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.top-menu {
+  height: 65px;
+  background: url("../images/border.png") left bottom repeat-x #ffffff;
 }

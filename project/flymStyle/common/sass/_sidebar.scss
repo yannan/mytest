@@ -168,7 +168,8 @@
     
   }
 
-  .sidebar-second {
+  .sidebar-second,
+  .sidebar-third {
     display: none;
     position: absolute;
     top: 0;
@@ -176,10 +177,25 @@
     width: 160px;
     background: #34353d;
   }
+  .sidebar-third {
+    li {
+      text-align: center;
+
+      a {
+        padding-left:0;
+      }
+    }
+  }
 
   li:hover {
     .sidebar-second {
       display: block;
+
+      li:hover {
+        .sidebar-third {
+          display: block;
+        }
+      }
     }
   }
 }
