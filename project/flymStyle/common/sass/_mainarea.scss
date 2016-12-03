@@ -1,0 +1,176 @@
+$bgColor: #5883ff #35d3b1 #ff6795 #3dbfff #ff9e6f #549bfb #71c38a #a690ec;
+@mixin ell {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+.main-area {
+  position: absolute;
+  left: 0;
+  top: 65px;
+  bottom: 0;
+  right: 0;
+  padding: 25px;
+  background: #eaeef3;
+  overflow: auto;
+}
+.br6 {
+  border-radius: 6px;
+}
+.data-tj {
+  @extend .br6;
+  padding: 20px;
+  background: #ffffff;
+}
+.normal-tit {
+  h2 {
+    padding-left: 10px;
+    border-left: solid 3px #5883ff;
+    font-size: 24px;
+    color: #333333;
+    line-height: 0.8;
+  }
+}
+.tj-ctr-item {
+  margin-left: 25px;
+  font-size: 14px;
+  line-height: 28px;
+
+  span {
+    color: #999999;
+  }
+  em {
+    margin-left: 3px;
+    color: #333333;
+    padding: 0 8px;
+    border: solid 1px #dfdfe5;
+    border-radius: 2px;
+    cursor: pointer;
+    
+    &.current {
+      background: #5883ff;
+      border-color: #5883ff;
+      color: #ffffff;
+    }
+  }
+
+  .select-area {
+    margin-left: 3px;
+    width: 100px;
+    background: #f5f5f5;
+  }
+}
+.tj-content {
+  padding: 30px 10px 0;
+}
+.tj-item {
+  li {
+    float: left;
+    width: 25%;
+    margin-bottom: 20px;
+    height: 124px;
+    overflow: hidden;
+  }
+  a {
+    display: block;
+    height: 124px;
+    margin: 0 20px;
+    padding-left: 45px;
+    padding-right:32px;
+    color: #ffffff;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  @for $i from 1 through 8 {
+    .style#{$i} a {
+      background-image: url("../images/tj#{$i}.png");
+      background-color: nth($bgColor,$i);
+    }
+  }
+
+  .tj-num {
+    margin-top: 30px;
+
+    h3 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .tj-view {
+    padding-top: 50px;
+    padding-left: 22px;
+
+    .icon {
+      float: left;
+      width: 10px;
+      height: 10px;
+      margin-top: 6px;
+      margin-right: 6px;
+      background: url("../images/icon_tool.png") no-repeat 0 -20px;
+    }
+  }
+}
+.tj-item-page {
+  font-size: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 10px;
+    background: #d2d8e0;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    &.current {
+      background: #5883ff;
+    }
+  }
+}
+
+.normal-moduel {
+  @extend .data-tj;
+  width: 49%;
+  height: 528px;
+  box-sizing: border-box;
+}
+
+.event-list {
+  margin-top: 15px;
+
+  li {
+    border-bottom: solid 1px #e6eaef;
+
+    a {
+      display: block;
+      padding: 0 10px;
+      color: #333333;
+      font-size: 14px;
+      line-height: 48px;
+      border-radius: 3px;
+      
+      &:hover {
+        background: #eaeef3;
+        color: #5883ff;
+      }
+    }
+  }
+
+  .title {
+    max-width: 65%;
+    @include ell;
+  }
+}
+

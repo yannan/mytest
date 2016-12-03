@@ -5,14 +5,294 @@
     <title>主体内容</title>
     <link rel="stylesheet" href="flymStyle/common/css/base.css">
     <link rel="stylesheet" href="flymStyle/common/css/common.css">
+    <link rel="stylesheet" href="flymStyle/common/css/select2.min.css">
 </head>
 <body>
     <div class="wrapper">
+        <iframe src="sidebar.html" frameborder="0" height="100%"></iframe>
         <div class="right-area">
-            <div class="top-menu">
+            <div class="top-bar clearfix">
+                <div class="top-logo fl">
+                    <a href="javascript:;"></a>
+                </div>
+                <div class="top-menu fl">
+                    <ul class="top-menu-ul clearfix">
+                        <li>
+                            <a href="javascript:;">个人中心</a>
+                            <i class="icon-close"></i>
+                        </li>
+                        <li class="current">
+                            <a href="javascript:;">课程管理</a>
+                            <i class="icon-close"></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">新闻中心</a>
+                            <i class="icon-close"></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">学员管理</a>
+                            <i class="icon-close"></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">班级管理</a>
+                            <i class="icon-close"></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">密码修改</a>
+                            <i class="icon-close"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="main-area">
+                <div class="moduel-index">
+                    <div class="data-tj">
+                        <div class="normal-tit clearfix">
+                            <h2 class="fl">数据统计</h2>
+                            <div class="tj-ctr fr clearfix">
+                                <div class="tj-ctr-item fl">
+                                    <span class="fl">统计时间：</span>
+                                    <em class="em-time current fl">本天</em>
+                                    <em class="em-time fl">本周</em>
+                                    <em class="em-time fl">本月</em>
+                                </div>
+
+                                <div class="tj-ctr-item fl">
+                                    <span class="fl">统计区域：</span>
+                                    <select name="" id="" class="select-area">
+                                        <option value="">xx校区</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tj-content">
+                            <div class="tj-container">
+                                <ul class="tj-item clearfix">
+                                    <li class="style1">
+                                        <a href="javascript:;">
+                                            <div class="tj-num fl">
+                                                <h3>11111</h3>
+                                                <p>获取客户资料</p>
+                                            </div>
+                                            <span class="tj-view fr"><i class="icon"></i>查看</span>
+                                        </a>
+                                    </li>
+                                    <li class="style2">
+                                        <a href="javascript:;">
+                                            <div class="tj-num fl">
+                                                <h3>11111</h3>
+                                                <p>联系客户人数</p>
+                                            </div>
+                                            <span class="tj-view fr"><i class="icon"></i>查看</span>
+                                        </a>
+                                    </li>
+                                    <li class="style3">
+                                        <a href="javascript:;">
+                                            <div class="tj-num fl">
+                                                <h3>11111</h3>
+                                                <p>体验课参加人数</p>
+                                            </div>
+                                            <span class="tj-view fr"><i class="icon"></i>查看</span>
+                                        </a>
+                                    </li>
+                                    <li class="style4">
+                                        <a href="javascript:;">
+                                            <div class="tj-num fl">
+                                                <h3>11111</h3>
+                                                <p>报名人数</p>
+                                            </div>
+                                            <span class="tj-view fr"><i class="icon"></i>查看</span>
+                                        </a>
+                                    </li>
+                                    <li class="style5">
+                                        <a href="javascript:;">
+                                            <div class="tj-num fl">
+                                                <h3>11111</h3>
+                                                <p>缴费金额</p>
+                                            </div>
+                                            <span class="tj-view fr"><i class="icon"></i>查看</span>
+                                        </a>
+                                    </li>
+                                    <li class="style6">
+                                        <a href="javascript:;">
+                                            <div class="tj-num fl">
+                                                <h3>11111</h3>
+                                                <p>上课人数</p>
+                                            </div>
+                                            <span class="tj-view fr"><i class="icon"></i>查看</span>
+                                        </a>
+                                    </li>
+                                    <li class="style7">
+                                        <a href="javascript:;">
+                                            <div class="tj-num fl">
+                                                <h3>11111</h3>
+                                                <p>教学达标率</p>
+                                            </div>
+                                            <span class="tj-view fr"><i class="icon"></i>查看</span>
+                                        </a>
+                                    </li>
+                                    <li class="style8">
+                                        <a href="javascript:;">
+                                            <div class="tj-num fl">
+                                                <h3>11111</h3>
+                                                <p>产值金额</p>
+                                            </div>
+                                            <span class="tj-view fr"><i class="icon"></i>查看</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="tj-item clearfix" style="display: none">
+                                    <li class="style1">
+                                        <a href="javascript:;">
+                                            <div class="tj-num fl">
+                                                <h3>11111</h3>
+                                                <p>获取客户资料</p>
+                                            </div>
+                                            <span class="tj-view fr"><i class="icon"></i>查看</span>
+                                        </a>
+                                    </li>
+                                </ul sty>
+                            </div>
+                            <ul class="tj-item-page">
+                                <li class="current"></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix mt20">
+                        <div class="normal-moduel fl">
+                            <div class="normal-tit clearfix">
+                                <h2 class="fl">待办事项</h2>
+                            </div>
+                            <ul class="event-list">
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="anti-page">
+
+                            </div>
+                        </div>
+
+                        <div class="normal-moduel fr">
+                            <div class="normal-tit clearfix">
+                                <h2 class="fl">公告/通知</h2>
+                            </div>
+                            <ul class="event-list">
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="fl title">10月份家长课分享：孩子学好围棋的关键因素10月份家长课分享：孩子学好围棋的关键因素</span>
+                                        <span class="fr time">2015-03-02 15:38:25</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="anti-page">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+
     </div>
+
+    <script src="flymStyle/common/js/jquery.min.js"></script>
+    <script src="flymStyle/common/js/select2.min.js"></script>
+    <script src="flymStyle/common/js/main.js"></script>
+    <script type="text/javascript">
+        $('select').select2({
+            minimumResultsForSearch: Infinity
+        });
+    </script
 </body>
 </html>
