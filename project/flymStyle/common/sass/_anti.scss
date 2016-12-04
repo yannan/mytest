@@ -1,0 +1,102 @@
+.anti-page {
+  text-align: center;
+  font-size: 0;
+
+  .arrow-left {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    background: url("../images/icon_tool.png") no-repeat 0 -30px;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  .arrow-right {
+    @extend .arrow-left;
+    background-position: 0 -45px;
+  }
+
+  &-num {
+    display: inline-block;
+    vertical-align: middle;
+
+    li {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      color: #666666;
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: bold;
+      vertical-align: middle;
+      line-height: 30px;
+      cursor: pointer;
+      text-align: center;
+      
+      &.current {
+        background: #5883ff;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .skip-page {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    color: #7a7a7a;
+    font-size: 14px;
+
+    .input {
+      position: relative;
+      display: inline-block;
+      margin: 0 5px;
+      width: 48px;
+      text-align: left;
+      border: solid 1px #e9e9e9;
+
+      input {
+        width: 30px;
+        border: 0;
+        outline: 0;
+      }
+
+      .icon-enter {
+        position: absolute;
+        top: 6px;
+        width: 10px;
+        height: 10px;
+        background: url("../images/icon_tool.png") no-repeat 0 -60px;
+      }
+    }
+  }
+
+  .page-totalnum {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    color: #7a7a7a;
+    font-size: 14px;
+    padding-right: 30px;
+    border-right: solid 1px #e4e4ea;
+
+    select {
+      width: 65px;
+      outline: 0px;
+    }
+  }
+
+  .total-result {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #7a7a7a;
+    font-size: 14px;
+
+    em {
+      color: #5883ff;
+    }
+  }
+}

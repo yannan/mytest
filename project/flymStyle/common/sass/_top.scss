@@ -12,6 +12,7 @@
   background: url("../images/border.png") left bottom repeat-x #ffffff;
 }
 .top-logo {
+  position: relative;
   width: 236px;
   height: 100%;
 
@@ -19,6 +20,17 @@
     display: block;
     height: 100%;
     background: url("../images/logo.png") no-repeat center center;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 3px;
+    margin-left: -6px;
+    border-bottom: solid 6px #333333;
+    border-left: solid 6px transparent;
+    border-right: solid 6px transparent;
   }
 }
 .top-menu {

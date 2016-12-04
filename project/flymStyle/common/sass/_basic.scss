@@ -1,0 +1,10 @@
+$bgColor: #5883ff #35d3b1 #ff6795 #3dbfff #ff9e6f #549bfb #71c38a #a690ec;
+@mixin ell() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+.mt25 {
+  margin-top: 25px;
+}
