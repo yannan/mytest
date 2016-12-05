@@ -1,5 +1,18 @@
 ;$(function () {
 
+    var getIframeDocument = function(element) {
+        return  element.contentDocument || element.contentWindow.document;
+    };
+
+    // var viewModel = window.parent.frames["contentModel"];
+    // var contentModel = window.parent.frames["conetntModel"];
+
+    // console.log(contentModel.id);
+
+    function topLocation(src) {
+        contentModel.src = src;
+    }
+
     //删除标签
     $('.icon-close').click(function () {
         $(this).parents('li').remove();
@@ -18,6 +31,7 @@
 
     $(document).on('click', '.top-menu-ul li', function () {
         $(this).addClass('current').siblings().removeClass('current');
+        topLocation('content/' + $(this).attr('data-src'));
     })
 
 //    统计时间标签选择
@@ -30,23 +44,9 @@
         minimumResultsForSearch: Infinity
     });
 
-    //左菜单点击
-    var getIframeDocument = function(element) {
-        return  element.contentDocument || element.contentWindow.document;
-    };
-    var viewModel = window.parent.frames["viewModel"];
-    var contentModel = window.frames["conetntModel"];
 
-    console.log(contentModel);
 
-    $('.sidebar-third a').click(function () {
-        if($(this).attr('data-exist') === "false") {
-            $(this).attr('data-exist', 'true');
-            $(getIframeDocument(viewModel)).find('.top-menu-ul li').removeClass('current');
-            $(getIframeDocument(viewModel)).find('.top-menu-ul').append('<li class="current" data-src="' + $(this).attr('data-src') + '"> <a href="javascript:;">' + $(this).text() +'</a> <i class="icon-close"></i> </li>');
-            $(getIframeDocument(viewModel)).find('.top-menu-ul li').last().trigger('click');
-        }
-    });
+
 
     //滚动条美化
     $('body').niceScroll({
