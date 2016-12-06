@@ -153,12 +153,13 @@ html {
 }
 .sidebar-menu li.disabled a {
   cursor: default;
+  color: #4f5059;
 }
 .sidebar-menu li.disabled:hover {
   background: none;
 }
 .sidebar-menu li.disabled:hover > a {
-  color: #91989e;
+  color: #4f5059;
 }
 .sidebar-menu .sidebar-second,
 .sidebar-menu .sidebar-third {
@@ -182,6 +183,42 @@ html {
   display: block;
 }
 
+.unfold {
+  position: absolute;
+  left: 127px;
+  top: 80px;
+  background: url(../images/piont.png) no-repeat 13px 11px #37363d;
+  width: 33px;
+  height: 34px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  z-index: 999;
+  opacity: .5;
+}
+
+.unfold:hover {
+  opacity: 1;
+}
+
+.unfold.active {
+  background-position: 13px -38px;
+}
+
+.onduilding {
+  position: relative;
+  top: -12px;
+  font-size: 11px;
+  display: inline-block;
+  width: 41px;
+  height: 20px;
+  background: url("../images/label.png") no-repeat;
+  line-height: 20px;
+  color: #82828b;
+  text-align: center;
+  text-indent: 5px;
+}
+
 .right-area {
   position: absolute;
   top: 0;
@@ -200,11 +237,11 @@ html {
 .top-logo {
   position: relative;
   width: 236px;
-  height: 100%;
+  height: 65px;
 }
 .top-logo a {
   display: block;
-  height: 100%;
+  height: 65px;
   background: url("../images/logo.png") no-repeat center center;
 }
 .top-logo::before {
@@ -552,6 +589,7 @@ html {
 .moduel-list .search-box input {
   width: 220px;
   padding: 0 12px;
+  height: 36px;
   border: 0;
   outline: 0;
   background: none;

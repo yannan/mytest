@@ -1,19 +1,5 @@
 ;$(function () {
 
-    //删除标签
-    $('.icon-close').click(function () {
-        $(this).parents('li').remove();
-        if($(this).parents('li').hasClass('current')) {
-            $('.top-menu-ul li').eq(0).addClass('current');
-        }
-    });
-    $('.top-menu-ul li').dblclick(function () {
-        $(this).remove();
-        if($(this).hasClass('current')) {
-            $('.top-menu-ul li').eq(0).addClass('current');
-        }
-    });
-
 //    切换当前选中标签
 
     $(document).on('click', '.top-menu-ul li', function () {
@@ -35,16 +21,18 @@
         return  element.contentDocument || element.contentWindow.document;
     };
     var viewModel = window.parent.frames["viewModel"];
-    var contentModel = window.frames["conetntModel"];
 
-    console.log(contentModel);
+    function getIframeContent(frameId){
+        var frameObj = document.getElementById(frameId);
+        return frameObj.contentWindow.document;
+    }
 
-    $('.sidebar-third a').click(function () {
+    $('body').on('click', '.sidebar-third a', function() {
         if($(this).attr('data-exist') === "false") {
             $(this).attr('data-exist', 'true');
-            $(getIframeDocument(viewModel)).find('.top-menu-ul li').removeClass('current');
-            $(getIframeDocument(viewModel)).find('.top-menu-ul').append('<li class="current" data-src="' + $(this).attr('data-src') + '"> <a href="javascript:;">' + $(this).text() +'</a> <i class="icon-close"></i> </li>');
-            $(getIframeDocument(viewModel)).find('.top-menu-ul li').last().trigger('click');
+            $(getIframeContent('viewModel')).find('.top-menu-ul li').removeClass('current');
+            $(getIframeContent('viewModel')).find('.top-menu-ul').append('<li class="current" data-src="' + $(this).attr('data-src') + '"> <a href="javascript:;">' + $(this).text() +'</a> <i class="icon-close"></i> </li>');
+            $(getIframeContent('viewModel')).find('.top-menu-ul li').last().trigger('click');
         }
     });
 
@@ -57,6 +45,20 @@
         cursorwidth:"10px",
         cursorborder:"1px solid #d9d9de",
         cursorborderradius:"0"
+    });
+
+    // 	左侧展开收起
+    var unfold = $('.unfold');
+    unfold.click(function(){
+        if($(this).hasClass('active')){
+            $('.sidebar').animate({opacity:1},300);
+            $(getIframeContent('viewModel')).find('.right-area').animate({left:'160px'},300);
+            $(this).animate({left:'127px'},300).removeClass('active');
+        }else{
+            $('.sidebar').animate({opacity:0,left:0},300);
+            $(getIframeContent('viewModel')).find('.right-area').animate({left:0},300);
+            $(this).animate({left:0},300).addClass('active');
+        }
     });
 
 })
