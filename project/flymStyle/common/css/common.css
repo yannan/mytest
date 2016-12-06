@@ -244,7 +244,7 @@ html {
   height: 65px;
   background: url("../images/logo.png") no-repeat center center;
 }
-.top-logo::before {
+.top-logo.current::before {
   content: '';
   position: absolute;
   left: 50%;

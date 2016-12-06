@@ -22,7 +22,7 @@
     background: url("../images/logo.png") no-repeat center center;
   }
 
-  &::before {
+  &.current::before {
     content: '';
     position: absolute;
     left: 50%;

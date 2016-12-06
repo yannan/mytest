@@ -32,7 +32,7 @@
     $(document).on('click', '.top-menu-ul li', function () {
         $(this).addClass('current').siblings().removeClass('current');
         $('#contentModel')[0].src = 'content/' + $(this).attr('data-src');
-    })
+    });
 
 //    统计时间标签选择
     $('.em-time').click(function () {
