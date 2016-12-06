@@ -28,12 +28,19 @@
     }
 
     $('body').on('click', '.sidebar-third a', function() {
+        var _leftSrc = $(this).attr('data-src');
         if($(this).attr('data-exist') === "false") {
             $(this).attr('data-exist', 'true');
             $(getIframeContent('viewModel')).find('.top-menu-ul li').removeClass('current');
             $(getIframeContent('viewModel')).find('.top-menu-ul').append('<li class="current" data-src="' + $(this).attr('data-src') + '"> <a href="javascript:;">' + $(this).text() +'</a> <i class="icon-close"></i> </li>');
             $(getIframeContent('viewModel')).find('.top-menu-ul li').last().trigger('click');
             $(getIframeContent('viewModel')).find('.top-logo').removeClass('current');
+        } else {
+            $(getIframeContent('viewModel')).find('.top-menu-ul li').each(function (i) {
+                if($(this).attr('data-src') == _leftSrc) {
+                    $(this).trigger('click');
+                }
+            })
         }
     });
 

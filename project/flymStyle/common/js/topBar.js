@@ -10,26 +10,35 @@
 
     //删除标签
     $('body').on('click', '.icon-close', function() {
+        var _src = $(this).parents('li')[0].attributes['data-src'].textContent;
         $(this).parents('li').remove();
-        if($(this).parents('li').hasClass('current')) {
-            $('.top-menu-ul li').eq(0).addClass('current');
+        var parentLi = $(parent.document).find('.sidebar-third a');
+        for(i=0;i<parentLi.length;i++) {
+            if(parentLi[i].attributes['data-src'].textContent == _src) {
+                parentLi[i].attributes['data-exist'].textContent = 'false';
+            }
         }
-        $(parent.document).find('.sidebar-third a').attr('data-exist', 'false');
         $('#contentModel')[0].src = 'content.html';
-        topLocation('content.html');
+        $('.top-logo').addClass('current');
     });
 
     $('body').on('dblclick', '.top-menu-ul li', function() {
+        var _src = $(this).attr('data-src');
         $(this).remove();
-        if($(this).hasClass('current')) {
-            $('.top-menu-ul li').eq(0).addClass('current');
+        var parentLi = $(parent.document).find('.sidebar-third a');
+        for(i=0;i<parentLi.length;i++) {
+            if(parentLi[i].attributes['data-src'].textContent == _src) {
+                parentLi[i].attributes['data-exist'].textContent = 'false';
+            }
         }
-        topLocation('content.html');
+        $('#contentModel')[0].src = 'content.html';
+        $('.top-logo').addClass('current');
     });
 
 //    切换当前选中标签
 
     $(document).on('click', '.top-menu-ul li', function () {
+        $('.top-logo').removeClass('current');
         $(this).addClass('current').siblings().removeClass('current');
         $('#contentModel')[0].src = 'content/' + $(this).attr('data-src');
     });
@@ -40,7 +49,12 @@
         $(this).addClass('current');
     });
 
-    //头部标签折叠
+    //头部logo事件
+    $('body').on('click', '.top-logo', function () {
+        $(this).addClass('current');
+        $('.top-menu-ul li').removeClass('current');
+        $('#contentModel')[0].src = 'content.html';
+    })
 
 
     //select 美化
