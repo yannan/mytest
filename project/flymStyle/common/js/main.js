@@ -27,7 +27,7 @@
         return frameObj.contentWindow.document;
     }
 
-    $('body').on('click', '.sidebar-third a', function() {
+    $('body').on('click', '.sidebar a', function() {
         var _leftSrc = $(this).attr('data-src');
         if($(this).attr('data-exist') === "false") {
             $(this).attr('data-exist', 'true');

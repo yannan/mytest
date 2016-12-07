@@ -611,7 +611,7 @@ html {
   cursor: pointer;
 }
 .moduel-list .select-vertical {
-  width: 90px;
+  padding: 0 10px;
   height: 36px;
   border: solid 1px #5883ff;
   font-size: 14px;
@@ -625,7 +625,7 @@ html {
   margin-left: 15px;
 }
 .moduel-list .expand-query {
-  width: 90px;
+  padding: 0 10px;
   height: 36px;
   border: solid 1px #dfdfdf;
   font-size: 14px;
@@ -649,7 +649,7 @@ html {
 }
 .moduel-list .btn-refresh {
   position: relative;
-  width: 170px;
+  padding: 0 10px;
   height: 36px;
   border: solid 1px #dfdfdf;
   font-size: 14px;
@@ -663,7 +663,7 @@ html {
   color: #5883ff;
 }
 .moduel-list .btn-add, .moduel-list .btn-edit, .moduel-list .btn-delete {
-  width: 72px;
+  padding: 0 10px;
   height: 36px;
   border: solid 1px #dfdfdf;
   font-size: 14px;
@@ -699,6 +699,7 @@ html {
 
 .list-table {
   margin-top: 30px;
+  margin-bottom: 80px;
 }
 .list-table table {
   width: 100%;
@@ -726,6 +727,13 @@ html {
 }
 .list-table td {
   color: #666666;
+}
+.list-table .operate a {
+  padding: 0 10px;
+  color: #006bb3;
+}
+.list-table .operate a:hover {
+  color: #358500;
 }
 .list-table .cource-name {
   overflow: hidden;
@@ -756,17 +764,39 @@ html {
 
 .bottom-antipage {
   min-width: 990px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 160px;
+  left: 0px;
   right: 0;
   height: 64px;
   padding: 0 25px;
   border-top: solid 1px #e4e4ea;
+  background: #ffffff;
 }
 .bottom-antipage .anti-page {
   text-align: left;
 }
 .bottom-antipage .arrow-left, .bottom-antipage .anti-page .arrow-right, .anti-page .bottom-antipage .arrow-right, .bottom-antipage .arrow-right {
   margin: 0 10px;
+}
+
+.checkbox-label {
+  padding-left: 10px;
+}
+.checkbox-label .icon-check {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../images/icon_checkbox.png") no-repeat 0 0;
+  vertical-align: middle;
+}
+.checkbox-label.checked .icon-check {
+  background-position: 0 -48px;
+}
+.checkbox-label input {
+  display: none;
+}
+.checkbox-label span {
+  display: inline-block;
+  width: 60px;
 }

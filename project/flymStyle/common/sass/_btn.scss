@@ -1,5 +1,5 @@
-@mixin btn-normal($width:90px, $height:36px, $border: solid 1px #dfdfdf ) {
-  width: $width;
+@mixin btn-normal($height:36px, $border: solid 1px #dfdfdf ) {
+  padding: 0 10px;
   height: $height;
   border: $border;
   font-size: 14px;

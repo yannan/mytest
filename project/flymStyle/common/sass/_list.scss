@@ -60,7 +60,7 @@
 
   .btn-refresh {
     position: relative;
-    @include btn-normal($width:170px);
+    @include btn-normal();
 
     &:hover {
       background-color: #eeeef3;
@@ -68,7 +68,7 @@
     }
   }
   .btn-add, .btn-edit, .btn-delete {
-    @include btn-normal($width:72px);
+    @include btn-normal();
     position: relative;
     margin-left: -1px;
 
@@ -106,6 +106,7 @@
 
 .list-table {
   margin-top: 30px;
+  margin-bottom: 80px;
 
   table {
     width: 100%;
@@ -146,6 +147,17 @@
     color: #666666;
   }
 
+  .operate {
+    a {
+      padding: 0 10px;
+      color: #006bb3;
+      
+      &:hover {
+        color: #358500;
+      }
+    }
+  }
+
   .cource-name {
     @include ell();
     max-width: 200px;
@@ -176,13 +188,14 @@
 
 .bottom-antipage {
   min-width: 990px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 160px;
+  left: 0px;
   right: 0;
   height: 64px;
   padding: 0 25px;
   border-top: solid 1px #e4e4ea;
+  background: #ffffff;
 
   .anti-page {
     text-align: left;
@@ -190,5 +203,30 @@
 
   .arrow-left, .arrow-right {
     margin: 0 10px;
+  }
+}
+
+.checkbox-label {
+  padding-left: 10px;
+
+  .icon-check {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../images/icon_checkbox.png") no-repeat 0 0;
+    vertical-align: middle;
+  }
+
+  &.checked .icon-check {
+    background-position: 0 -48px;
+  }
+
+  input {
+    display: none;
+  }
+
+  span {
+    display: inline-block;
+    width: 60px;
   }
 }

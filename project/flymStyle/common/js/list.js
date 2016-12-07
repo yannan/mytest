@@ -1,4 +1,30 @@
 ;(function() {
+    //checkbox处理
+    $('body').on('click', '.checkbox-label input', function () {
+        if($(this).parents('.checkbox-label').is('#selectAlltd')) {
+            if(!$(this).parents('.checkbox-label').hasClass('checked')) {
+                $(this).parents('.checkbox-label').addClass('checked');
+                $(this).parents('.checkbox-label').find('span').text('取消全选');
+                $('.list-table .checkbox-label').addClass('checked');
+                $('.list-table .checkbox-label input').attr('checked', true);
+            } else {
+                $(this).parents('.checkbox-label').removeClass('checked');
+                $(this).parents('.checkbox-label').find('span').text('全选');
+                $('.list-table .checkbox-label').removeClass('checked');
+                $('.list-table .checkbox-label input').attr('checked', false);
+            }
+        } else {
+            $(this).parents('.checkbox-label').toggleClass('checked');
+        }
+
+    });
+
+    //select 美化
+    $('select').select2({
+        minimumResultsForSearch: Infinity
+    });
+
+    //滚动条美化
     $('body').niceScroll({
         cursorcolor:"#e4e4ea",
         cursoropacitymin:1,

@@ -111,3 +111,6 @@ ins,a {
 .tc{
 	text-align:center;
 }
+.tl {
+    text-align: left!important;
+}

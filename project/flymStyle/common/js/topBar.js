@@ -40,7 +40,7 @@
     $(document).on('click', '.top-menu-ul li', function () {
         $('.top-logo').removeClass('current');
         $(this).addClass('current').siblings().removeClass('current');
-        $('#contentModel')[0].src = 'content/' + $(this).attr('data-src');
+        $('#contentModel')[0].src = $(this).attr('data-src');
     });
 
 //    统计时间标签选择
