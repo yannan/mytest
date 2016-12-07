@@ -6,11 +6,6 @@
         $(this).addClass('current').siblings().removeClass('current');
     })
 
-//    统计时间标签选择
-    $('.em-time').click(function () {
-        $('.em-time').removeClass('current');
-        $(this).addClass('current');
-    });
     //select 美化
     $('select').select2({
         minimumResultsForSearch: Infinity
