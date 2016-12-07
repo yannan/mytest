@@ -69,4 +69,15 @@
         }
     });
 
+//    左侧导航伸展方向
+    var bodyHeight = $('body').height();
+    $('.sidebar-menu>li').each(function() {
+            if($(this).offset().top / bodyHeight > 0.666 ) {
+                $(this).find('.sidebar-second, .sidebar-third').css({
+                    'top': 'auto',
+                    'bottom': 0
+                });
+            }
+    });
+
 })

@@ -170,6 +170,10 @@ html {
   width: 160px;
   background: #34353d;
 }
+.sidebar-menu .sidebar-second a,
+.sidebar-menu .sidebar-third a {
+  padding-left: 35px;
+}
 .sidebar-menu .sidebar-third li {
   text-align: center;
 }

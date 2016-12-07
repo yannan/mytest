@@ -10,7 +10,6 @@ function createCode() {
         code += selectChar[charIndex];
     }
     code.toLowerCase();
-    //alert(code);
     if (checkCode) {
         checkCode.className = "code";
         checkCode.value = code;
@@ -30,9 +29,6 @@ function validate() {
 }
 
 window.onload = createCode();
-$('.btn-login').click(function() {
-    validate();
-});
 $('.icon-refresh').click(function() {
     createCode();
 });
