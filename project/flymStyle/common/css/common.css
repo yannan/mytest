@@ -259,6 +259,34 @@ html {
   border-right: solid 6px transparent;
 }
 
+.top-menu {
+  position: relative;
+  overflow: hidden;
+}
+.top-menu .menu-ctr {
+  display: none;
+  position: absolute;
+  top: 18px;
+  width: 28px;
+  height: 28px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  z-index: 999;
+  opacity: .5;
+  cursor: pointer;
+}
+.top-menu .menu-ctr-left {
+  left: 0;
+  background: url(../images/piont.png) no-repeat 11px -40px #37363d;
+}
+.top-menu .menu-ctr-right {
+  right: 0;
+  background: url(../images/piont.png) no-repeat 11px 9px #37363d;
+}
+.top-menu .top-menu-ul {
+  position: relative;
+}
 .top-menu li {
   position: relative;
   float: left;
@@ -268,11 +296,14 @@ html {
   border-right: solid 1px #e5e9ef;
   text-align: center;
 }
+.top-menu li:first-child {
+  margin-left: 0;
+}
 .top-menu li a {
   display: block;
   color: #666666;
   font-size: 14px;
-  line-height: 60px;
+  line-height: 61px;
 }
 .top-menu li .icon-close {
   display: none;
