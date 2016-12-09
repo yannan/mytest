@@ -88,19 +88,21 @@
 
     }
 
-    $('body').on('click', '.menu-ctr-left', function () {
-        var _left = parseInt($('.top-menu-ul').css("left")) - 200 + "px";
-        console.log(_left);
-        $('.top-menu-ul').animate({left: _left});
-    });
     $('body').on('click', '.menu-ctr-right', function () {
-        var _left = parseInt($('.top-menu-ul').css("left")) + 200 + "px";
+        var _left = parseInt($('.top-menu-ul').css("left")) - getlabelLength()/4 + "px";
+        if(parseInt($('.top-menu-ul').css("left")) > -getlabelLength()/2) {
+            $('.top-menu-ul').animate({left: _left});
+        }
+        //console.log(_left);
+    });
+    $('body').on('click', '.menu-ctr-left', function () {
+        var _left = parseInt($('.top-menu-ul').css("left")) + getlabelLength()/4 + "px";
         if(parseInt($('.top-menu-ul').css("left")) < 0 ) {
             $('.top-menu-ul').animate({left: _left});
         }
 
     });
-    console.log($('body'));
+    //console.log($('body'));
 
     $(window).resize(function () {
         labelScroll();
