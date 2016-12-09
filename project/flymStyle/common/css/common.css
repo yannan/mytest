@@ -155,6 +155,9 @@ html {
   cursor: default;
   color: #4f5059;
 }
+.sidebar-menu li.disabled .icon {
+  background-position-x: -40px;
+}
 .sidebar-menu li.disabled:hover {
   background: none;
 }

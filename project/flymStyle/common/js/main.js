@@ -28,6 +28,8 @@
             $(this).attr('data-exist', 'true');
             $(getIframeContent('viewModel')).find('.top-menu-ul li').removeClass('current');
             $(getIframeContent('viewModel')).find('.top-menu-ul').append('<li class="current" data-src="' + $(this).attr('data-src') + '"> <a href="javascript:;">' + $(this).text() +'</a> <i class="icon-close"></i> </li>');
+            $(getIframeContent('viewModel')).find('.main-area iframe').hide();
+            $(getIframeContent('viewModel')).find('.main-area').append('<iframe src="' + $(this).attr('data-src') + '" id="contentModel" name="content" frameborder="0" width="100%" height="100%"></iframe>');
             $(getIframeContent('viewModel')).find('.top-menu-ul li').last().trigger('click');
             $(getIframeContent('viewModel')).find('.top-logo').removeClass('current');
         } else {
