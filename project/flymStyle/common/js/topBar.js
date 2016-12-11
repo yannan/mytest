@@ -9,29 +9,32 @@
     }
 
     //删除标签
-    $('body').on('click', '.icon-close', function() {
-        var _src = $(this).parents('li')[0].attributes['data-src'].textContent;
-        var _index = $(this).parents('.top-menu-ul').find('li').index();
-        $(this).parents('li').remove();
-        $('iframe')[_index].remove();
-        var parentLi = $(parent.document).find('.sidebar a');
-        for(i=0;i<parentLi.length;i++) {
-            if(parentLi[i].attributes['data-src']) {
-                if(parentLi[i].attributes['data-src'].textContent == _src) {
-                    parentLi[i].attributes['data-exist'].textContent = 'false';
+    $('body').on('click', '.top-menu-ul li', function(event) {
+        if(event.target.tagName.toLowerCase() == 'i') {
+            var _src = $(this).attr('data-src');
+            var _index = $(this).index();
+            $(this).remove();
+            $('iframe')[_index + 1].remove();
+            var parentLi = $(parent.document).find('.sidebar a');
+            for(i=0;i<parentLi.length;i++) {
+                if(parentLi[i].attributes['data-src']) {
+                    if(parentLi[i].attributes['data-src'].textContent == _src) {
+                        parentLi[i].attributes['data-exist'].textContent = 'false';
+                    }
                 }
             }
+            $('iframe').hide();
+            $($('iframe')[0]).show();
+            $('.top-menu-ul li').removeClass('current');
+            $('.top-logo').addClass('current');
         }
-        $('iframe').hide();
-        $($('iframe')[0]).show();
-        $('.top-logo').addClass('current');
     });
 
     $('body').on('dblclick', '.top-menu-ul li', function() {
         var _src = $(this).attr('data-src');
         var _index = $(this).index();
         $(this).remove();
-        $('iframe')[_index].remove();
+        $('iframe')[_index+1].remove();
         var parentLi = $(parent.document).find('.sidebar a');
         for(i=0;i<parentLi.length;i++) {
             if(parentLi[i].attributes['data-src']) {
@@ -42,6 +45,7 @@
         }
         $('iframe').hide();
         $($('iframe')[0]).show();
+        $('.top-menu-ul li').removeClass('current');
         $('.top-logo').addClass('current');
     });
 
