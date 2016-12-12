@@ -8,9 +8,9 @@
   min-width: 1040px;
 }
 .top-bar {
-  position: relative;
-  height: 65px;
-  background: url("../images/border.png") left bottom repeat-x #ffffff;
+  height: 61px;
+  border-bottom: solid 4px #333333;
+  //background: url("../images/border.png") left bottom repeat-x #ffffff;
 }
 .top-logo {
   position: relative;
@@ -38,6 +38,30 @@
   position: relative;
   overflow: hidden;
 
+  .menu-ctr {
+    display: none;
+    position: absolute;
+    top: 18px;
+    width: 28px;
+    height: 28px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    z-index: 999;
+    opacity: .5;
+    cursor: pointer;
+
+    &-left {
+      left: 0;
+      background: url(../images/piont.png) no-repeat 11px -40px #37363d;
+    }
+
+    &-right {
+      right: 0;
+      background: url(../images/piont.png) no-repeat 11px 9px #37363d;
+    }
+  }
+
   .top-menu-ul {
     position: relative;
   }
@@ -47,8 +71,6 @@
     float: left;
     width: 115px;
     margin-left: -1px;
-    border-left: solid 1px #e5e9ef;
-    border-right: solid 1px #e5e9ef;
     text-align: center;
 
     &:first-child {
@@ -57,6 +79,8 @@
 
     a {
       display: block;
+      border-left: solid 1px #e5e9ef;
+      border-right: solid 1px #e5e9ef;
       color: #666666;
       font-size: 14px;
       line-height: 61px;
@@ -89,6 +113,9 @@
     }
 
     &.current {
+
+      border-bottom: solid 4px #5883ff;
+
       a {
         color: #333333;
         font-weight: bold;
@@ -107,15 +134,3 @@
     }
   }
 }
-.menu-ctr {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 28px;
-  height: 61px;
-  background: url("../images/arrow.png") no-repeat center center;
-  border-left: solid 1px #d4d7dc;
-  z-index: 999;
-  cursor: pointer;
-}
-

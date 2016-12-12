@@ -19,7 +19,7 @@ html {
   top: 0;
   left: 0;
   width: 160px;
-  min-height: 100%;
+  bottom: 0;
   background: #34353d;
   z-index: 99;
 }
@@ -80,7 +80,8 @@ html {
   line-height: 48px;
 }
 .sidebar-menu li > a {
-  color: #91989e;
+  position: relative;
+  color: #ffffff;
   display: block;
   padding-left: 18px;
 }
@@ -88,8 +89,9 @@ html {
   border-bottom: 0;
 }
 .sidebar-menu li .icon-tri {
-  position: relative;
-  top: -2px;
+  position: absolute;
+  top: 22px;
+  right: 20px;
   display: inline-block;
   margin-left: 15px;
   border-left: solid 4px #82828b;
@@ -133,11 +135,13 @@ html {
   background-position: 0 -382px;
 }
 .sidebar-menu li .icon-dot {
+  position: absolute;
   background: #ffffff;
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  top: -3px;
+  top: 23px;
+  left: 20px;
 }
 .sidebar-menu li:hover {
   background: #5883ff;
@@ -237,9 +241,8 @@ html {
 }
 
 .top-bar {
-  position: relative;
-  height: 65px;
-  background: url("../images/border.png") left bottom repeat-x #ffffff;
+  height: 61px;
+  border-bottom: solid 4px #333333;
 }
 
 .top-logo {
@@ -267,6 +270,27 @@ html {
   position: relative;
   overflow: hidden;
 }
+.top-menu .menu-ctr {
+  display: none;
+  position: absolute;
+  top: 18px;
+  width: 28px;
+  height: 28px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  z-index: 999;
+  opacity: .5;
+  cursor: pointer;
+}
+.top-menu .menu-ctr-left {
+  left: 0;
+  background: url(../images/piont.png) no-repeat 11px -40px #37363d;
+}
+.top-menu .menu-ctr-right {
+  right: 0;
+  background: url(../images/piont.png) no-repeat 11px 9px #37363d;
+}
 .top-menu .top-menu-ul {
   position: relative;
 }
@@ -275,8 +299,6 @@ html {
   float: left;
   width: 115px;
   margin-left: -1px;
-  border-left: solid 1px #e5e9ef;
-  border-right: solid 1px #e5e9ef;
   text-align: center;
 }
 .top-menu li:first-child {
@@ -284,6 +306,8 @@ html {
 }
 .top-menu li a {
   display: block;
+  border-left: solid 1px #e5e9ef;
+  border-right: solid 1px #e5e9ef;
   color: #666666;
   font-size: 14px;
   line-height: 61px;
@@ -308,6 +332,9 @@ html {
   color: #333333;
   font-weight: bold;
 }
+.top-menu li.current {
+  border-bottom: solid 4px #5883ff;
+}
 .top-menu li.current a {
   color: #333333;
   font-weight: bold;
@@ -321,18 +348,6 @@ html {
   border-bottom: solid 6px #333333;
   border-left: solid 6px transparent;
   border-right: solid 6px transparent;
-}
-
-.menu-ctr {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 28px;
-  height: 61px;
-  background: url("../images/arrow.png") no-repeat center center;
-  border-left: solid 1px #d4d7dc;
-  z-index: 999;
-  cursor: pointer;
 }
 
 .main-area {

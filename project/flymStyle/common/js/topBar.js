@@ -58,6 +58,13 @@
         var _index = $(this).index();
         $($('iframe')[_index+1]).show();
         labelScroll();
+        if($(this).offset().left > $(window).width() - 114) {
+           $('.menu-ctr-right').trigger('click');
+        }
+        if($(this).offset().left < 395) {
+            $('.menu-ctr-left').trigger('click');
+        }
+
     });
 
 //    统计时间标签选择
@@ -104,14 +111,14 @@
     $('body').on('click', '.menu-ctr-right', function () {
         var _left = parseInt($('.top-menu-ul').css("left")) - getlabelLength()/4 + "px";
         if(parseInt($('.top-menu-ul').css("left")) > -getlabelLength()/2) {
-            $('.top-menu-ul').animate({left: _left});
+            $('.top-menu-ul').css({left: _left});
         }
         //console.log(_left);
     });
     $('body').on('click', '.menu-ctr-left', function () {
         var _left = parseInt($('.top-menu-ul').css("left")) + getlabelLength()/4 + "px";
         if(parseInt($('.top-menu-ul').css("left")) < 0 ) {
-            $('.top-menu-ul').animate({left: _left});
+            $('.top-menu-ul').css({left: _left});
         }
 
     });

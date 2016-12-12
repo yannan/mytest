@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 160px;
-  min-height: 100%;
+  bottom: 0;
   background: #34353d;
   z-index: 99;
 }
@@ -64,7 +64,8 @@
     line-height: 48px;
 
     >a {
-      color: #91989e;
+      position: relative;
+      color: #ffffff;
       display: block;
       padding-left: 18px;
     }
@@ -74,8 +75,9 @@
     }
 
     .icon-tri {
-      position: relative;
-      top: -2px;
+      position: absolute;
+      top: 22px;
+      right: 20px;
       display: inline-block;
       margin-left: 15px;
       border-left: solid 4px #82828b;
@@ -129,11 +131,13 @@
       }
 
       &-dot {
+        position: absolute;
         background: #ffffff;
         width: 4px;
         height: 4px;
         border-radius: 50%;
-        top: -3px;
+        top: 23px;
+        left: 20px;
       }
     }
 
