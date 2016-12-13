@@ -167,3 +167,29 @@
   }
 }
 
+/*20161213 add*/
+.contentHolder {
+  position:relative;
+  width: 160px;
+  overflow: hidden;
+  z-index: -1;
+}
+.contentHolder .content {
+  width: 160px;
+}
+.sidebar .ps-container .ps-scrollbar-y{
+  right:840px;
+}
+.moduel-list{
+  padding-top: 58px;
+  position: relative;
+}
+.list-tit{
+  position: fixed;
+  width: 100%;
+  left: 20px;
+  top: 0;
+  padding-top: 20px;
+  background-color: #fff;
+}
+

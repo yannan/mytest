@@ -76,5 +76,17 @@
                 });
             }
     });
+//    左侧导航高度
+    $('.sidebar-menu').hover(function () {
+        $('.contentHolder').width(1000);
+    }, function () {
+        $('.contentHolder').width(160);
+    })
+    var h =$(window).height() - 234;
+    $('#Default').height(h);
 
+    $(window).on('resize', function () {
+        var h =$(window).height() - 234;
+        $('#Default').height(h);
+    })
 })

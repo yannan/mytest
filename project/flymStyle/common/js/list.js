@@ -40,4 +40,6 @@
         cursorborder:"1px solid #d9d9de",
         cursorborderradius:"0"
     });
+
+//    tip
 })();
