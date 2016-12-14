@@ -29,6 +29,9 @@
     $('select').select2({
         minimumResultsForSearch: Infinity
     });
+    $('.page-totalnum select').select2({
+        //minimumResultsForSearch: Infinity
+    });
 
     //滚动条美化
     $('body').niceScroll({
@@ -42,4 +45,24 @@
     });
 
 //    tip
+    $('table [title]').qtip({
+        style: {
+            classes: 'qtip-dark'
+        },
+        position: {
+            my: 'bottom center',  // Position my top left...
+            at: 'top center' // at the bottom right of...
+        }
+    });
+
+//    datepicker
+    $.datetimepicker.setLocale('ch');//设置中文
+    $('.date-picker').datetimepicker({
+        lang:"ch",           //语言选择中文
+        format:"Y-m-d",      //格式化日期
+        timepicker:false,    //关闭时间选项
+        yearStart:2000,     //设置最小年份
+        yearEnd:2050,        //设置最大年份
+    });
+
 })();

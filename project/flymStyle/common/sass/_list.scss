@@ -3,14 +3,15 @@
 
   .search-box {
     position: relative;
-    width: 280px;
+    width: 240px;
     height: 36px;
     background: #f5f5f5;
     border: solid 1px #dfdfdf;
     border-radius: 2px;
 
     input {
-      width: 220px;
+      float: left;
+      width: 119px;
       padding: 0 12px;
       height: 36px;
       border: 0;
@@ -30,6 +31,13 @@
       background: url("../images/icon_tool.png") no-repeat 0 -70px;
       cursor: pointer;
     }
+    
+    .line {
+      width: 1px;
+      height: 17px;
+      margin-top: 9px;
+      background: #e0e0ea;
+    }
   }
 
   .select-vertical {
@@ -38,12 +46,30 @@
     font-weight: bold;
     background: #5883ff;
     margin-left: 15px;
+    position: relative;
+    padding: 0 16px;
+    text-indent: 10px;
+    
+    &:hover {
+      opacity: 0.9;
+    }
+
+    .icon-menu {
+      position: absolute;
+      top: 13px;
+      left: 12px;
+      width: 15px;
+      height: 15px;
+      background: url("../images/icon_tool.png") no-repeat 0 -110px;
+      cursor: pointer;
+    }
   }
   .expand-query {
     @include btn-normal();
-    margin-left: 15px;
+    margin-left: 5px;
     color: #5883ff;
     font-weight: bold;
+    border: 0;
 
     .icon-arrow {
       display: inline-block;
@@ -55,6 +81,32 @@
       &.active {
         background-position: -30px -20px;
       }
+    }
+  }
+
+  .btn-query {
+    @include btn-normal($border: solid 1px #5883ff);
+    color: #ffffff;
+    font-weight: bold;
+    background: #5883ff;
+    margin-left:0;
+    border-radius: 0 3px 3px 0;
+    position: relative;
+    padding: 0 24px;
+    text-indent: 6px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    .icon-search {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 15px;
+      height: 15px;
+      background: url("../images/icon_tool.png") no-repeat 0 -90px;
+      cursor: pointer;
     }
   }
 
@@ -105,11 +157,13 @@
 }
 
 .list-table {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 80px;
 
   table {
     width: 100%;
+    border-top: solid 1px #e7e9ed;
+    border-bottom: solid 1px #e7e9ed;
   }
 
   th, td {
@@ -132,9 +186,20 @@
         color: #ffffff;
       }
     }
-    
-    &:nth-child(even) {
+  }
+
+  tbody tr {
+    &:nth-child(odd) {
       background: #f1f2f4;
+      border: solid 1px #e7e9ed;
+    }
+
+    td {
+      border-right: solid 1px #e7e9ed;
+
+      &:last-child {
+        border-right: 0;
+      }
     }
   }
 
@@ -228,5 +293,87 @@
   span {
     display: inline-block;
     width: 60px;
+  }
+}
+
+.expand-query-box {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border: solid 1px #eeeff1;
+  padding: 15px 0;
+  
+  .input-list {
+    line-height: 32px;
+    
+    em {
+      padding: 0 5px;
+      color: #dfdfdf;
+    }
+  }
+
+  .input-list-name {
+    width: 88px;
+    font-size: 14px;
+    color: #999999;
+    text-align: right;
+  }
+
+  .date-picker {
+    float: left;
+    width: 80px;
+    padding: 0 20px 0 10px;
+    height: 32px;
+    border: solid 1px #dfdfdf;
+    outline: 0;
+    line-height: 32px;
+    font-size: 14px;
+    color: #333333;
+    background: url(../images/cal.png) no-repeat 90px center #f5f5f5;
+    border-radius: 3px;
+    font-family: 'Arial';
+  }
+
+  .normal-select {
+    width: 200px;
+    height: 32px;
+    padding: 0 10px;
+    border: solid 1px #dfdfdf;
+    line-height: 32px;
+    font-size: 14px;
+    color: #333333;
+    background: url(../images/cal.png) no-repeat 90px center #f5f5f5;
+    border-radius: 3px;
+    font-family: 'Arial';
+  }
+
+  .select2-container {
+    float: left;
+  }
+
+  .select2-container .select2-selection--single {
+    height: 32px;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #333333;
+    line-height: 32px;
+  }
+  .select2-container--default .select2-selection--single {
+    background-color: #f5f5f5;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: 0;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background: url("../images/icon_tool.png") no-repeat -30px 0;
   }
 }
