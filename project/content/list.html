@@ -30,13 +30,13 @@
             </div>
 
             <div class="expand-query-box clearfix">
-                <div class="input-list fl clearfix">
+                <div class="input-list clearfix">
                     <span class="input-list-name fl">排课日期：</span>
                     <input type="text" class="date-picker fl" id=""/>
                     <em class="fl">-</em>
                     <input type="text" class="date-picker fl" id=""/>
                 </div>
-                <div class="input-list fl clearfix">
+                <div class="input-list clearfix">
                     <span class="input-list-name fl">年界：</span>
                     <select name="" id="selectNj" class="normal-select fl">
                         <option>2016</option>
@@ -51,17 +51,58 @@
                         <option>2007</option>
                     </select>
                 </div>
-                <div class="input-list fl clearfix">
+                <div class="input-list clearfix">
                     <span class="input-list-name fl">排课日期：</span>
                     <input type="text" class="date-picker fl" id=""/>
                     <em class="fl">-</em>
                     <input type="text" class="date-picker fl" id=""/>
                 </div>
-                <div class="input-list fl clearfix">
+                <div class="input-list clearfix">
                     <span class="input-list-name fl">计费形式：</span>
                     <select name="" id="selectJf" class="normal-select fl">
                         <option>形式1</option>
                         <option>形式2</option>
+                    </select>
+                </div>
+                <div class="input-list clearfix">
+                    <span class="input-list-name fl">状态：</span>
+                    <select name="" id="selectZt" class="normal-select fl">
+                        <option>已开课</option>
+                        <option>未开课</option>
+                    </select>
+                </div>
+                <div class="input-list clearfix">
+                    <span class="input-list-name fl">年级：</span>
+                    <select name="" id="selectNj2" class="normal-select fl">
+                        <option>一年级</option>
+                        <option>二年级</option>
+                    </select>
+                </div>
+                <div class="input-list clearfix">
+                    <span class="input-list-name fl">科目：</span>
+                    <select name="" id="selectZt2" class="normal-select fl">
+                        <option>一轮科目</option>
+                        <option>二轮科目</option>
+                    </select>
+                </div>
+                <div class="input-list clearfix">
+                    <span class="input-list-name fl">状态：</span>
+                    <select name="" id="selectZt3" class="normal-select fl">
+                        <option>已开课</option>
+                        <option>未开课</option>
+                    </select>
+                </div>
+                <div class="input-list clearfix">
+                    <span class="input-list-name fl">选课日期：</span>
+                    <input type="text" class="date-picker fl" id=""/>
+                    <em class="fl">-</em>
+                    <input type="text" class="date-picker fl" id=""/>
+                </div>
+                <div class="input-list clearfix">
+                    <span class="input-list-name fl">授课校区：</span>
+                    <select name="" id="selectZt4" class="normal-select fl">
+                        <option>xx校区</option>
+                        <option>xx校区</option>
                     </select>
                 </div>
             </div>
@@ -414,6 +455,55 @@
                 </tr>
                 </tbody>
             </table>
+        </div>
+    </div>
+    <div class="bottom-antipage">
+        <div class="anti-page mt20 clearfix">
+            <div class="page-totalnum">
+                <em>每页</em>
+                <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                    <option value="">13</option>
+                    <option value="">14</option>
+                    <option value="">15</option>
+                    <option value="">16</option>
+                    <option value="">17</option>
+                    <option value="">18</option>
+                    <option value="">19</option>
+                    <option value="">20</option>
+                </select>
+                <em>条</em>
+            </div>
+            <div class="total-result">
+                共<em>103</em>条检索记录
+            </div>
+            <i class="arrow-left"></i>
+            <ul class="anti-page-num">
+                <li class="current">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>...</li>
+                <li>10</li>
+            </ul>
+            <i class="arrow-right"></i>
+            <div class="skip-page">
+                到<div class="input"><input type="text"><i class="icon-enter"></i></div>页
+            </div>
         </div>
     </div>
     <script src="../flymStyle/common/js/jquery.min.js"></script>

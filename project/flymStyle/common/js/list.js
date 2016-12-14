@@ -25,6 +25,25 @@
         $(this).addClass('current');
     });
 
+    //拓展搜索选项
+    $('.expand-query').toggle(function () {
+        $(this).find('.icon-arrow').addClass('active');
+        $('.expand-query-box').stop(true,true).fadeIn();
+    },  function () {
+        $(this).find('.icon-arrow').removeClass('active');
+        $('.expand-query-box').stop(true,true).fadeOut(1000);
+    });
+
+    // $('body').click(function (e) {
+    //     var e = e || event;
+    //     if(e.target.className != 'expand-query'
+    //
+    //     ) {
+    //         $('.expand-query').find('.icon-arrow').removeClass('active');
+    //         $('.expand-query-box').stop(true,true).fadeOut(1000);
+    //     }
+    // });
+
     //select 美化
     $('select').select2({
         minimumResultsForSearch: Infinity
