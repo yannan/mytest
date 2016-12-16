@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../flymStyle/common/css/select2.min.css">
     <link rel="stylesheet" href="../flymStyle/common/css/jquery.qtip.min.css">
 </head>
-<body>
+<body style="overflow: hidden">
 <div class="moduel-list">
     <div class="list-tit clearfix">
         <!--<div class="fl clearfix">-->
@@ -20,54 +20,60 @@
             <!--<div class="fl select-vertical">选择列</div>-->
             <!--<div class="expand-query fl">扩展查询 <i class="icon-arrow"></i></div>-->
         <!--</div>-->
-        <div class="fl clearfix">
-            <!--<div class="btn-refresh fl"><i class="icon-refresh"></i>批量刷新所有联系人</div>-->
-            <div class="btn-add fl"><i class="icon-add"></i>新增</div>
-            <div class="btn-edit fl"><i class="icon-edit"></i>编辑</div>
-            <div class="btn-edit fl"><i class="icon-edit"></i>冻结</div>
-            <div class="btn-edit fl"><i class="icon-edit"></i>恢复正常</div>
-            <div class="btn-edit fl"><i class="icon-edit"></i>修改密码</div>
-            <div class="btn-delete fl"><i class="icon-delete"></i>删除</div>
+        <div class="clearfix">
+            <div class="fl clearfix">
+                <!--<div class="btn-refresh fl"><i class="icon-refresh"></i>批量刷新所有联系人</div>-->
+                <div class="btn-add fl"><i class="icon-add"></i>新增</div>
+                <div class="btn-edit fl"><i class="icon-edit"></i>编辑</div>
+                <div class="btn-edit fl"><i class="icon-edit"></i>冻结</div>
+                <div class="btn-edit fl"><i class="icon-edit"></i>恢复正常</div>
+                <div class="btn-edit fl"><i class="icon-edit"></i>修改密码</div>
+                <div class="btn-delete fl"><i class="icon-delete"></i>删除</div>
+            </div>
+        </div>
+        <div class="list-table list-table-hd">
+            <table>
+                <thead>
+                <tr>
+                    <th class="tl" width="10%">
+                        <label class="checkbox-label" id="selectAlltd">
+                            <input type="checkbox" name="" id="">
+                            <i class="icon-check"></i>
+                            <span>全选</span>
+                        </label>
+                    </th>
+                    <th width="20%">操作</th>
+                    <th width="25%">用户名</th>
+                    <th width="10%">姓名</th>
+                    <th width="5%">编号</th>
+                    <th width="5%">性别</th>
+                    <th width="10%">部门</th>
+                    <th width="10%">状态</th>
+                    <th width="15%">注册时间</th>
+                </tr>
+                </thead>
+            </table>
         </div>
     </div>
 
-    <div class="list-table">
+    <div class="list-table list-table-scroll">
         <table>
-            <thead>
-            <tr>
-                <th class="tl" width="100">
-                    <label class="checkbox-label" id="selectAlltd">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                        <span>全选</span>
-                    </label>
-                </th>
-                <th>操作</th>
-                <th>用户名</th>
-                <th>姓名</th>
-                <th>编号</th>
-                <th>性别</th>
-                <th>部门</th>
-                <th>状态</th>
-                <th>注册时间</th>
-            </tr>
-            </thead>
             <tbody>
             <tr>
-                <td class="tl">
+                <td class="tl" width="10%">
                     <label class="checkbox-label">
                         <input type="checkbox" name="" id="">
                         <i class="icon-check"></i>
                     </label>
                 </td>
-                <td><div class="operate"><a href="javascript:;" title="编辑">编辑</a><a href="javascript:;" title="角色配置">角色配置</a></div></td>
-                <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                <td title="怡乐校区">怡乐校区</td>
-                <td title="2016">2016</td>
-                <td title="男">男</td>
-                <td title="无">无</td>
-                <td title="正常"><em class="td-label green">正常</em></td>
-                <td title="2016-12-07">2016-12-07</td>
+                <td width="20%"><div class="operate"><a href="javascript:;" title="编辑">编辑</a><a href="javascript:;" title="角色配置">角色配置</a></div></td>
+                <td width="25%"><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                <td width="10%" title="怡乐校区">怡乐校区</td>
+                <td width="5%" title="2016">2016</td>
+                <td width="5%" title="男">男</td>
+                <td width="10%" title="无">无</td>
+                <td width="10%" title="正常"><em class="td-label green">正常</em></td>
+                <td width="15%" title="2016-12-07">2016-12-07</td>
             </tr>
             <tr>
                 <td class="tl">
@@ -218,7 +224,7 @@
     </div>
 </div>
 <div class="bottom-antipage">
-    <div class="anti-page mt20 clearfix">
+    <div class="anti-page mt10 clearfix">
         <div class="page-totalnum">
             <em>每页</em>
             <select name="" id="">

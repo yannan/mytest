@@ -26,12 +26,19 @@
     });
 
     //拓展搜索选项
+    var _expandHeight = $('.expand-query-box').height();
+
     $('.expand-query').toggle(function () {
         $(this).find('.icon-arrow').addClass('active');
-        $('.expand-query-box').stop(true,true).fadeIn();
+        $('.expand-query-box').stop(true,true).slideDown();
+        console.log(_expandHeight);
+        $('.list-table-hd').stop(true,true).animate({"margin-top": _expandHeight + 52 + "px"});
+        $('.list-table-scroll').stop(true,true).animate({"top": _expandHeight + 158 + "px"});
     },  function () {
         $(this).find('.icon-arrow').removeClass('active');
-        $('.expand-query-box').stop(true,true).fadeOut(1000);
+        $('.expand-query-box').stop(true,true).slideUp();
+        $('.list-table-hd').stop(true,true).animate({"margin-top": "20px"});
+        $('.list-table-scroll').stop(true,true).animate({"top": "126px"});
     });
 
     // $('body').click(function (e) {
@@ -53,7 +60,16 @@
     });
 
     //滚动条美化
-    $('body').niceScroll({
+    $('.list-table-scroll').niceScroll({
+        cursorcolor:"#e4e4ea",
+        cursoropacitymin:1,
+        cursoropacitymax:1,
+        touchbehavior:false,
+        cursorwidth:"10px",
+        cursorborder:"1px solid #d9d9de",
+        cursorborderradius:"0"
+    });
+    $('.content-body').niceScroll({
         cursorcolor:"#e4e4ea",
         cursoropacitymin:1,
         cursoropacitymax:1,
@@ -83,5 +99,17 @@
         yearStart:2000,     //设置最小年份
         yearEnd:2050,        //设置最大年份
     });
+    $('#btn-add').click(function(){
+        layer.open({
+            type:2,
+            title:'添加用户',
+            area:['632px', '447px'],
+            fixed:true,
+            skin: 'pop-add',
+            maxmin: true,
+            shadeClose: true,
+            content: '../pop.html'
+        });
+    })
 
 })();

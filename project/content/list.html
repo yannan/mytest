@@ -9,150 +9,157 @@
     <link rel="stylesheet" href="../flymStyle/common/css/select2.min.css">
     <link rel="stylesheet" href="../flymStyle/common/css/jquery.qtip.min.css">
     <link rel="stylesheet" href="../flymStyle/common/css/jquery.datetimepicker.css"/>
+    <link rel="stylesheet" href="../flymStyle/common/css/layer.css"/>
 </head>
-<body>
+<body style="overflow: hidden">
     <div class="moduel-list">
         <div class="list-tit clearfix">
-            <div class="fl clearfix">
-                <div class="fl search-box">
-                    <input type="text" placeholder="课程名称">
-                    <span class="line fl"></span>
-                    <div class="expand-query fl">扩展查询 <i class="icon-arrow"></i></div>
+            <div class="clearfix">
+                <div class="fl clearfix">
+                    <div class="fl search-box">
+                        <input type="text" placeholder="课程名称">
+                        <span class="line fl"></span>
+                        <div class="expand-query fl">扩展查询 <i class="icon-arrow"></i></div>
+                    </div>
+                    <div class="fl btn-query">查询<i class="icon-search"></i></div>
+                    <div class="fl select-vertical">选择列<i class="icon-menu"></i></div>
                 </div>
-                <div class="fl btn-query">查询<i class="icon-search"></i></div>
-                <div class="fl select-vertical">选择列<i class="icon-menu"></i></div>
-            </div>
-            <div class="fr clearfix">
-                <div class="btn-refresh fl"><i class="icon-refresh"></i>批量刷新所有联系人</div>
-                <div class="btn-add fl"><i class="icon-add"></i>新增</div>
-                <div class="btn-edit fl"><i class="icon-edit"></i>编辑</div>
-                <div class="btn-delete fl"><i class="icon-delete"></i>删除</div>
-            </div>
+                <div class="fr clearfix">
+                    <div class="btn-refresh fl"><i class="icon-refresh"></i>批量刷新所有联系人</div>
+                    <div class="btn-add fl" id="btn-add"><i class="icon-add"></i>新增</div>
+                    <div class="btn-edit fl"><i class="icon-edit"></i>编辑</div>
+                    <div class="btn-delete fl"><i class="icon-delete"></i>删除</div>
+                </div>
 
-            <div class="expand-query-box clearfix">
-                <div class="input-list clearfix">
-                    <span class="input-list-name fl">排课日期：</span>
-                    <input type="text" class="date-picker fl" id=""/>
-                    <em class="fl">-</em>
-                    <input type="text" class="date-picker fl" id=""/>
+                <div class="expand-query-box clearfix">
+                    <div class="input-list clearfix">
+                        <span class="input-list-name fl">排课日期：</span>
+                        <input type="text" class="date-picker fl" id=""/>
+                        <em class="fl">-</em>
+                        <input type="text" class="date-picker fl" id=""/>
+                    </div>
+                    <div class="input-list clearfix">
+                        <span class="input-list-name fl">年界：</span>
+                        <select name="" id="selectNj" class="normal-select fl">
+                            <option>2016</option>
+                            <option>2015</option>
+                            <option>2014</option>
+                            <option>2013</option>
+                            <option>2012</option>
+                            <option>2011</option>
+                            <option>2010</option>
+                            <option>2009</option>
+                            <option>2008</option>
+                            <option>2007</option>
+                        </select>
+                    </div>
+                    <div class="input-list clearfix">
+                        <span class="input-list-name fl">排课日期：</span>
+                        <input type="text" class="date-picker fl" id=""/>
+                        <em class="fl">-</em>
+                        <input type="text" class="date-picker fl" id=""/>
+                    </div>
+                    <div class="input-list clearfix">
+                        <span class="input-list-name fl">计费形式：</span>
+                        <select name="" id="selectJf" class="normal-select fl">
+                            <option>形式1</option>
+                            <option>形式2</option>
+                        </select>
+                    </div>
+                    <div class="input-list clearfix">
+                        <span class="input-list-name fl">状态：</span>
+                        <select name="" id="selectZt" class="normal-select fl">
+                            <option>已开课</option>
+                            <option>未开课</option>
+                        </select>
+                    </div>
+                    <div class="input-list clearfix">
+                        <span class="input-list-name fl">年级：</span>
+                        <select name="" id="selectNj2" class="normal-select fl">
+                            <option>一年级</option>
+                            <option>二年级</option>
+                        </select>
+                    </div>
+                    <div class="input-list clearfix">
+                        <span class="input-list-name fl">科目：</span>
+                        <select name="" id="selectZt2" class="normal-select fl">
+                            <option>一轮科目</option>
+                            <option>二轮科目</option>
+                        </select>
+                    </div>
+                    <div class="input-list clearfix">
+                        <span class="input-list-name fl">状态：</span>
+                        <select name="" id="selectZt3" class="normal-select fl">
+                            <option>已开课</option>
+                            <option>未开课</option>
+                        </select>
+                    </div>
+                    <div class="input-list clearfix">
+                        <span class="input-list-name fl">选课日期：</span>
+                        <input type="text" class="date-picker fl" id=""/>
+                        <em class="fl">-</em>
+                        <input type="text" class="date-picker fl" id=""/>
+                    </div>
+                    <div class="input-list clearfix">
+                        <span class="input-list-name fl">授课校区：</span>
+                        <select name="" id="selectZt4" class="normal-select fl">
+                            <option>xx校区</option>
+                            <option>xx校区</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="input-list clearfix">
-                    <span class="input-list-name fl">年界：</span>
-                    <select name="" id="selectNj" class="normal-select fl">
-                        <option>2016</option>
-                        <option>2015</option>
-                        <option>2014</option>
-                        <option>2013</option>
-                        <option>2012</option>
-                        <option>2011</option>
-                        <option>2010</option>
-                        <option>2009</option>
-                        <option>2008</option>
-                        <option>2007</option>
-                    </select>
-                </div>
-                <div class="input-list clearfix">
-                    <span class="input-list-name fl">排课日期：</span>
-                    <input type="text" class="date-picker fl" id=""/>
-                    <em class="fl">-</em>
-                    <input type="text" class="date-picker fl" id=""/>
-                </div>
-                <div class="input-list clearfix">
-                    <span class="input-list-name fl">计费形式：</span>
-                    <select name="" id="selectJf" class="normal-select fl">
-                        <option>形式1</option>
-                        <option>形式2</option>
-                    </select>
-                </div>
-                <div class="input-list clearfix">
-                    <span class="input-list-name fl">状态：</span>
-                    <select name="" id="selectZt" class="normal-select fl">
-                        <option>已开课</option>
-                        <option>未开课</option>
-                    </select>
-                </div>
-                <div class="input-list clearfix">
-                    <span class="input-list-name fl">年级：</span>
-                    <select name="" id="selectNj2" class="normal-select fl">
-                        <option>一年级</option>
-                        <option>二年级</option>
-                    </select>
-                </div>
-                <div class="input-list clearfix">
-                    <span class="input-list-name fl">科目：</span>
-                    <select name="" id="selectZt2" class="normal-select fl">
-                        <option>一轮科目</option>
-                        <option>二轮科目</option>
-                    </select>
-                </div>
-                <div class="input-list clearfix">
-                    <span class="input-list-name fl">状态：</span>
-                    <select name="" id="selectZt3" class="normal-select fl">
-                        <option>已开课</option>
-                        <option>未开课</option>
-                    </select>
-                </div>
-                <div class="input-list clearfix">
-                    <span class="input-list-name fl">选课日期：</span>
-                    <input type="text" class="date-picker fl" id=""/>
-                    <em class="fl">-</em>
-                    <input type="text" class="date-picker fl" id=""/>
-                </div>
-                <div class="input-list clearfix">
-                    <span class="input-list-name fl">授课校区：</span>
-                    <select name="" id="selectZt4" class="normal-select fl">
-                        <option>xx校区</option>
-                        <option>xx校区</option>
-                    </select>
-                </div>
+            </div>
+            <div class="list-table list-table-hd">
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="tl" width="10%">
+                            <label class="checkbox-label" id="selectAlltd">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                                <span>全选</span>
+                            </label>
+                        </th>
+                        <th width="5%">ID</th>
+                        <th width="20%">课程名称</th>
+                        <th width="10%">校区</th>
+                        <th width="5%">年届</th>
+                        <th width="10%">科目</th>
+                        <th width="5%">年级</th>
+                        <th width="10%">计费形式</th>
+                        <th width="5%">单价</th>
+                        <th width="10%">类型</th>
+                        <th width="10%">状态</th>
+                        <th width="5%">备注</th>
+                        <th width="5%">录入人</th>
+                    </tr>
+                    </thead>
+                </table>
             </div>
         </div>
 
-        <div class="list-table">
+        <div class="list-table list-table-scroll">
             <table>
-                <thead>
-                <tr>
-                    <th class="tl" width="100">
-                        <label class="checkbox-label" id="selectAlltd">
-                            <input type="checkbox" name="" id="">
-                            <i class="icon-check"></i>
-                            <span>全选</span>
-                        </label>
-                    </th>
-                    <th>ID</th>
-                    <th>课程名称</th>
-                    <th>校区</th>
-                    <th>年届</th>
-                    <th>科目</th>
-                    <th>年级</th>
-                    <th>计费形式</th>
-                    <th>单价</th>
-                    <th>类型</th>
-                    <th>状态</th>
-                    <th>备注</th>
-                    <th>录入人</th>
-                </tr>
-                </thead>
                 <tbody>
                 <tr>
-                    <td class="tl">
+                    <td class="tl" width="10%">
                     <label class="checkbox-label">
                         <input type="checkbox" name="" id="">
                         <i class="icon-check"></i>
                     </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
+                    </td>
+                    <td width="5%">01</td>
+                    <td width="20%"><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                    <td width="10%" title="怡乐校区">怡乐校区</td>
+                    <td width="5%" title="2016">2016</td>
+                    <td width="10%" title="一轮课程">一轮课程</td>
+                    <td width="5%" title="一年级">一年级</td>
+                    <td width="10%" title="课次">课次</td>
+                    <td width="5%" title="7500"><em class="td-label green">7500</em></td>
+                    <td width="10%" title="秋季班">秋季班</td>
+                    <td width="10%" title="已开课">已开课</td>
+                    <td width="5%" title="\">\</td>
+                    <td width="5%" title="校长">校长</td>
                 </tr>
                 <tr>
                     <td class="tl">
@@ -458,7 +465,7 @@
         </div>
     </div>
     <div class="bottom-antipage">
-        <div class="anti-page mt20 clearfix">
+        <div class="anti-page mt10 clearfix">
             <div class="page-totalnum">
                 <em>每页</em>
                 <select name="" id="">
@@ -507,6 +514,7 @@
         </div>
     </div>
     <script src="../flymStyle/common/js/jquery.min.js"></script>
+    <script src="../flymStyle/common/js/layer.js" type="text/javascript"></script>
     <script src="../flymStyle/common/js/select2.min.js"></script>
     <script src="../flymStyle/common/js/jquery.nicescroll.js"></script>
     <script src="../flymStyle/common/js/jquery.qtip.min.js"></script>

@@ -4,7 +4,7 @@
   top: 65px;
   bottom: 0;
   right: 0;
-  padding: 25px;
+  padding: 15px 5px 5px 15px;
   background: #eaeef3;
   overflow: auto;
 }
@@ -170,7 +170,7 @@
 /*20161213 add*/
 .contentHolder {
   position:relative;
-  width: 160px;
+  width: 1000px;
   overflow: hidden;
   z-index: -1;
 }
@@ -178,7 +178,10 @@
   width: 160px;
 }
 .sidebar .ps-container .ps-scrollbar-y{
-  right:1000px;
+  //right:992px;
+}
+.sidebar .ps-container .ps-scrollbar-y-rail {
+  right:992px;
 }
 .moduel-list{
   padding-top: 58px;
@@ -186,10 +189,137 @@
 }
 .list-tit{
   position: fixed;
-  left: 20px;
-  right: 20px;
+  left: 0px;
+  right: 0px;
   top: 0;
-  padding-top: 20px;
+  padding: 20px 20px 0 20px;
   background-color: #fff;
 }
 
+.pop-main{
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+}
+.pop-add .layui-layer-title{
+  position: relative;
+  height: 36px;
+  padding: 0 10px;
+  border-bottom: 2px solid #5883ff;
+  line-height: 36px;
+  font-weight: bold;
+}
+.pop-close{
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  width: 10px;
+  height: 10px;
+  background: url(../images/pop_close.png) no-repeat 0 0;
+}
+.pop-close:hover{
+  background-position: 0 -29px;
+}
+.pop-add-list{
+  padding: 0 30px 25px;
+  background-color: #f1f2f4;
+  overflow: hidden;
+}
+.pop-add-tit{
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #d5d9e0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.pop-add-tit h3,
+.pop-add-tit em{
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.pop-add-tit h3{
+  padding: 0 10px;
+  margin-top: -12px;
+  background-color: #f1f2f4;
+  line-height: 24px;
+  font-weight: bold;
+}
+.pop-add-tit em{
+  width: 2px;
+  height: 12px;
+  margin-top: -6px;
+  background-color: #333;
+}
+.pop-form label{
+  float: left;
+  padding-right: 10px;
+  width: 74px;
+  line-height: 30px;
+  text-align: right;
+}
+.pop-form .red{
+  color: #ff862d;
+}
+.pop-form input{
+  width: 172px;
+  height: 28px;
+  border: 1px solid #cdd3dd;
+  background-color: #fff;
+}
+.pop-form{
+  margin-left: -30px;
+  margin-top: -10px;
+}
+.pop-form li{
+  margin-top: 10px;
+  margin-left: 30px;
+  float: left;
+}
+.pop-form .tj-ctr-item{
+  margin-left: 0;
+}
+.pop-form select{
+  width: 170px!important;
+}
+.pop-footer{
+  padding-right: 24px;
+  background-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: right;
+  font-size: 14px;
+}
+.pop-footer a{
+  display: inline-block;
+  padding: 0 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.blue-btn{
+  background-color: #5883ff;
+  height: 32px;
+  line-height: 32px;
+  color: #fff;
+}
+.grey-btn{
+  background-color: #f1f2f4;
+  border: 1px solid #dee1e5;
+  height: 30px;
+  line-height: 30px;
+  color: #5883ff;
+}
+.pop-footer a:hover{
+  filter:alpha(opacity=90);
+  -moz-opacity:0.9;
+  opacity:0.9;
+}
+.pop-add{
+  width: 632px;
+}
+.pop-add .layui-layer-setwin{
+  top:11px;
+}

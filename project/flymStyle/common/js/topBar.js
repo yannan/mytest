@@ -119,6 +119,11 @@
         var _left = parseInt($('.top-menu-ul').css("left")) + getlabelLength()/4 + "px";
         if(parseInt($('.top-menu-ul').css("left")) < 0 ) {
             $('.top-menu-ul').css({left: _left});
+            //console.log(_left);
+        }
+        if(parseInt($('.top-menu-ul').css("left")) > 0 ) {
+            $('.top-menu-ul').css({left:0});
+            //console.log(_left);
         }
 
     });

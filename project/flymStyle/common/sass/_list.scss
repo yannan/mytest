@@ -1,4 +1,7 @@
 .moduel-list {
+  height: 100%;
+  position: relative;
+
   @extend .data-tj;
 
   .search-box {
@@ -157,10 +160,11 @@
 }
 
 .list-table {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 80px;
 
   table {
+    table-layout: fixed;
     width: 100%;
     border-top: solid 1px #e7e9ed;
     border-bottom: solid 1px #e7e9ed;
@@ -257,7 +261,7 @@
   bottom: 0;
   left: 0px;
   right: 0;
-  height: 64px;
+  height: 48px;
   padding: 0 25px;
   border-top: solid 1px #e4e4ea;
   background: #ffffff;
@@ -300,8 +304,9 @@
   display: none;
   position: absolute;
   top: 70px;
-  left: 0;
-  width: 100%;
+  left: 20px;
+  right:20px;
+  //width: 100%;
   background: #ffffff;
   border: solid 1px #eeeff1;
   padding: 15px 0;
@@ -391,4 +396,17 @@
     height: 10px;
     background: url("../images/icon_tool.png") no-repeat -30px 0;
   }
+}
+.list-table-hd {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.list-table-scroll {
+  position: absolute;
+  top: 126px;
+  bottom: 50px;
+  left: 20px;
+  right: 20px;
+  background: #FFFFFF;
+  overflow: auto;
 }

@@ -1,5 +1,7 @@
 ;$(function () {
 
+    $('#viewModel').width($(window).width() - 160);
+
 //    切换当前选中标签
 
     $(document).on('click', '.top-menu-ul li', function () {
@@ -42,15 +44,15 @@
     });
 
     //滚动条美化
-    $('body').niceScroll({
-        cursorcolor:"#e4e4ea",
-        cursoropacitymin:1,
-        cursoropacitymax:1,
-        touchbehavior:false,
-        cursorwidth:"10px",
-        cursorborder:"1px solid #d9d9de",
-        cursorborderradius:"0"
-    });
+    //$('body').niceScroll({
+    //    cursorcolor:"#e4e4ea",
+    //    cursoropacitymin:1,
+    //    cursoropacitymax:1,
+    //    touchbehavior:false,
+    //    cursorwidth:"10px",
+    //    cursorborder:"1px solid #d9d9de",
+    //    cursorborderradius:"0"
+    //});
 
     // 	左侧展开收起
     var unfold = $('.unfold');
@@ -78,9 +80,9 @@
     });
 //    左侧导航高度
     $('.sidebar-menu').hover(function () {
-        $('.contentHolder').width(1000);
+        $('.sidebar').css("z-index", 999);
     }, function () {
-        $('.contentHolder').width(160);
+        $('.sidebar').css("z-index", 99);
     })
     var h =$(window).height() - 234;
     $('#Default').height(h);

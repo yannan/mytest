@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主体内容</title>
+    <link rel="stylesheet" href="flymStyle/common/css/base.css">
+    <link rel="stylesheet" href="flymStyle/common/css/common.css">
+    <link rel="stylesheet" href="flymStyle/common/css/select2.min.css">
+</head>
+<body>
+   	<!--添加用户-->
+   	<div class="pop pop-add">
+   		<div class="pop-main">
+   			<dl class="pop-add-list">
+   				<dt class="pop-add-tit">
+   					<h3>必填信息<em></em></h3>
+   				</dt>
+   				<dd>
+					<ul class="pop-form clearfix">
+						<li>
+							<label for=""><span class="red">*</span>用户名</label>
+							<input type="text" name="" id="" value="" />
+						</li>
+						<li>
+							<label for=""><span>*</span>姓名</label>
+							<input type="text" name="" id="" value="" />
+						</li>
+						<li>
+							<label for=""><span>*</span>密码</label>
+							<input type="text" name="" id="" value="" />
+						</li>
+						<li>
+							<label for=""><span>*</span>职员ID</label>
+							<input type="text" name="" id="" value="" />
+						</li>
+						<li>
+							<label for=""><span>*</span>密码重置</label>
+							<input type="text" name="" id="" value="" />
+						</li>
+					</ul>
+				</dd>
+				<dt class="pop-add-tit">
+   					<h3>选填信息<em></em></h3>
+   				</dt>
+   				<dd>
+					<ul class="pop-form clearfix">
+						<li>
+							<label for="">部门</label>
+							<div class="tj-ctr-item fl">
+		                        <select name="" id="" class="select-area">
+		                            <option value="">xx部门</option>
+		                            <option value="">xx部门</option>
+		                        </select>
+		                    </div>
+						</li>
+						<li>
+							<label for="">电话</label>
+							<input type="text" name="" id="" value="" />
+						</li>
+						<li>
+							<label for="">性别</label>
+							<div class="tj-ctr-item fl">
+		                        <select name="" id="" class="select-area">
+		                            <option value="">男</option>
+		                            <option value="">女</option>
+		                        </select>
+		                    </div>
+						</li>
+						<li>
+							<label for="">其他</label>
+							<input type="text" name="" id="" value="" />
+						</li>
+						<li>
+							<label for="">邮箱</label>
+							<input type="text" name="" id="" value="" />
+						</li>
+					</ul>
+				</dd>
+   			</dl>
+   		</div>
+   		<div class="pop-footer">
+   			<a href="#" class="blue-btn">保存</a>
+   			<a href="#" class="grey-btn">关闭</a>
+   		</div>
+   	</div>
+	<script src="flymStyle/common/js/jquery.min.js"></script>
+	<script src="flymStyle/common/js/jquery.nicescroll.js"></script>
+	<script src="flymStyle/common/js/select2.min.js"></script>
+	<script>
+		$('select').select2({
+			minimumResultsForSearch: Infinity
+		});
+		$('body').niceScroll({
+			cursorcolor:"#e4e4ea",
+			cursoropacitymin:1,
+			cursoropacitymax:1,
+			touchbehavior:false,
+			cursorwidth:"10px",
+			cursorborder:"1px solid #d9d9de",
+			cursorborderradius:"0"
+		});
+	</script>
+</body>
+</html>
