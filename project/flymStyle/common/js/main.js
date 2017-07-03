@@ -59,11 +59,11 @@
     unfold.click(function(){
         if($(this).hasClass('active')){
             $('.sidebar').animate({'left': '0'},300);
-            $(getIframeContent('viewModel')).find('.right-area').animate({left:'160px'},300);
+            $('#viewModel').animate({left:'160px',width:$(window).width() - 160},300);
             $(this).animate({left:'127px'},300).removeClass('active');
         }else{
             $('.sidebar').animate({'left': '-160px'},300);
-            $(getIframeContent('viewModel')).find('.right-area').animate({left:0},300);
+            $('#viewModel').animate({left:0,width:$(window).width()},300);
             $(this).animate({left:0},300).addClass('active');
         }
     });

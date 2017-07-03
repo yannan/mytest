@@ -25,10 +25,18 @@
                     <div class="fl select-vertical">选择列<i class="icon-menu"></i></div>
                 </div>
                 <div class="fr clearfix">
+                    <div class="btn-operate fl"><i class="icon-operate"></i>通用</div>
+
                     <div class="btn-refresh fl"><i class="icon-refresh"></i>批量刷新所有联系人</div>
+                    <div class="btn-role fl"><i class="icon-role"></i>角色管理</div>
                     <div class="btn-add fl" id="btn-add"><i class="icon-add"></i>新增</div>
                     <div class="btn-edit fl"><i class="icon-edit"></i>编辑</div>
                     <div class="btn-delete fl"><i class="icon-delete"></i>删除</div>
+                    <div class="btn-jf fl"><i class="icon-jf"></i>缴费</div>
+                    <div class="btn-tf fl"><i class="icon-tf"></i>退费</div>
+                    <div class="btn-fjxf fl"><i class="icon-fjxf"></i>分解学费</div>
+                    <div class="btn-zs fl"><i class="icon-zs"></i>赠送</div>
+                    <div class="btn-jy fl"><i class="icon-jy"></i>结业</div>
                 </div>
 
                 <div class="expand-query-box clearfix">
@@ -109,8 +117,11 @@
                     </div>
                 </div>
             </div>
-            <div class="list-table list-table-hd">
-                <table>
+        </div>
+
+        <div class="list-table-container" style="width:100%;overflow: auto;">
+            <div class="list-table list-table-hd list-tit2">
+                <table style="width:100%">
                     <thead>
                     <tr>
                         <th class="tl" width="10%">
@@ -120,348 +131,587 @@
                                 <span>全选</span>
                             </label>
                         </th>
-                        <th width="5%">ID</th>
-                        <th width="20%">课程名称</th>
-                        <th width="10%">校区</th>
-                        <th width="5%">年届</th>
-                        <th width="10%">科目</th>
-                        <th width="5%">年级</th>
-                        <th width="10%">计费形式</th>
-                        <th width="5%">单价</th>
-                        <th width="10%">类型</th>
-                        <th width="10%">状态</th>
-                        <th width="5%">备注</th>
-                        <th width="5%">录入人</th>
+                        <th width="5%">ID <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="20%">课程名称 <span class="arrow arrow-down"></span><span class=" arrow arrow-up"></span></th>
+                        <th width="10%">校区 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">年届 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">科目 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">年级 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">计费形式 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">单价 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">类型 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">状态 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">备注 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">ID <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="20%">课程名称 <span class="arrow arrow-down"></span><span class=" arrow arrow-up"></span></th>
+                        <th width="10%">校区 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">年届 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">科目 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">年级 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">计费形式 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">单价 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">类型 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">状态 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">备注 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%" style="display: none">录入人 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%" style="display: none">录入人 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
                     </tr>
                     </thead>
                 </table>
             </div>
-        </div>
 
-        <div class="list-table list-table-scroll">
-            <table>
-                <tbody>
-                <tr>
-                    <td class="tl" width="10%">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                    </td>
-                    <td width="5%">01</td>
-                    <td width="20%"><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td width="10%" title="怡乐校区">怡乐校区</td>
-                    <td width="5%" title="2016">2016</td>
-                    <td width="10%" title="一轮课程">一轮课程</td>
-                    <td width="5%" title="一年级">一年级</td>
-                    <td width="10%" title="课次">课次</td>
-                    <td width="5%" title="7500"><em class="td-label green">7500</em></td>
-                    <td width="10%" title="秋季班">秋季班</td>
-                    <td width="10%" title="已开课">已开课</td>
-                    <td width="5%" title="\">\</td>
-                    <td width="5%" title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label red">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr><tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                <tr>
-                    <td class="tl">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="" id="">
-                        <i class="icon-check"></i>
-                    </label>
-                </td>
-                    <td>01</td>
-                    <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
-                    <td title="怡乐校区">怡乐校区</td>
-                    <td title="2016">2016</td>
-                    <td title="一轮课程">一轮课程</td>
-                    <td title="一年级">一年级</td>
-                    <td title="课次">课次</td>
-                    <td title="7500"><em class="td-label green">7500</em></td>
-                    <td title="秋季班">秋季班</td>
-                    <td title="已开课">已开课</td>
-                    <td title="\">\</td>
-                    <td title="校长">校长</td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="list-table list-table-scroll">
+                <table style="width: 100%">
+                    <thead style="display: none">
+                    <tr>
+                        <th class="tl" width="10%">
+                            <label class="checkbox-label" id="selectAlltd">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                                <span>全选</span>
+                            </label>
+                        </th>
+                        <th width="5%">ID <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="20%">课程名称 <span class="arrow arrow-down"></span><span class=" arrow arrow-up"></span></th>
+                        <th width="10%">校区 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">年届 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">科目 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">年级 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">计费形式 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">单价 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">类型 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">状态 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">备注 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">ID <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="20%">课程名称 <span class="arrow arrow-down"></span><span class=" arrow arrow-up"></span></th>
+                        <th width="10%">校区 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">年届 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">科目 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">年级 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">计费形式 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">单价 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">类型 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="10%">状态 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">备注 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">录入人 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                        <th width="5%">录入人 <span class="arrow arrow-down"></span><span class="arrow arrow-up"></span></th>
+                    </tr>
+                    </thead s>
+                    <tbody>
+                    <tr>
+                        <td class="tl" width="10%">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td width="5%">01</td>
+                        <td width="20%"><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td width="10%" title="怡乐校区">怡乐校区</td>
+                        <td width="5%" title="2016">2016</td>
+                        <td width="10%" title="一轮课程">一轮课程</td>
+                        <td width="5%" title="一年级">一年级</td>
+                        <td width="10%" title="课次">课次</td>
+                        <td width="5%" title="7500"><em class="td-label green">7500</em></td>
+                        <td width="10%" title="秋季班">秋季班</td>
+                        <td width="10%" title="已开课">已开课</td>
+                        <td width="5%" title="\">\</td>
+                        <td width="5%">01</td>
+                        <td width="20%"><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td width="10%" title="怡乐校区">怡乐校区</td>
+                        <td width="5%" title="2016">2016</td>
+                        <td width="10%" title="一轮课程">一轮课程</td>
+                        <td width="5%" title="一年级">一年级</td>
+                        <td width="10%" title="课次">课次</td>
+                        <td width="5%" title="7500"><em class="td-label green">7500</em></td>
+                        <td width="10%" title="秋季班">秋季班</td>
+                        <td width="10%" title="已开课">已开课</td>
+                        <td width="5%" title="\">\</td>
+                        <td width="5%" title="校长">校长</td>
+                        <td width="5%" title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr><tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    <tr>
+                        <td class="tl">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="" id="">
+                                <i class="icon-check"></i>
+                            </label>
+                        </td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label green">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td>01</td>
+                        <td><p class="cource-name" title="2016基础班秋季课程2016基础班秋季课程">2016基础班秋季课程2016基础班秋季课程</p></td>
+                        <td title="怡乐校区">怡乐校区</td>
+                        <td title="2016">2016</td>
+                        <td title="一轮课程">一轮课程</td>
+                        <td title="一年级">一年级</td>
+                        <td title="课次">课次</td>
+                        <td title="7500"><em class="td-label red">7500</em></td>
+                        <td title="秋季班">秋季班</td>
+                        <td title="已开课">已开课</td>
+                        <td title="\">\</td>
+                        <td title="校长">校长</td>
+                        <td title="校长">校长</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
     <div class="bottom-antipage">

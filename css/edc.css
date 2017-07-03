@@ -1,0 +1,338 @@
+.content2 {
+  top: 0;
+}
+.mod-gradient {
+  padding: 0.67rem;
+  -webkit-linear-gradient(left, #3fa6fe 0%,#00e3fe 100%);
+  background: linear-gradient(to right, #3fa6fe 0%,#00e3fe 100%);
+}
+.brlr {
+  border-radius: 0.09rem 0.09rem 0 0;
+}
+.open-list {
+  font-size: 0.32rem;
+  color: #fff;
+  line-height: 1.8;
+}
+.open-list em {
+  font-size: 0.37rem;
+}
+.mod-table .total td {
+  font-weight: bold;
+}
+.table-normal {
+  width: 100%;
+  border: solid 1px #eff2f5;
+}
+.table-normal th {
+  line-height: 0.91rem;
+  font-size: 0.32rem;
+  text-align: center;
+  border-bottom: solid 1px #eff2f5;
+  border-right: solid 1px #eff2f5;
+  color: #a1a4a8;
+  background: #fafafa;
+  border-top: solid 1px #eff2f5;
+}
+.table-normal td {
+  line-height: 1.07rem;
+  font-size: 0.32rem;
+  text-align: center;
+  border-bottom: solid 1px #eff2f5;
+  border-right: solid 1px #eff2f5;
+  color: #757b82;
+}
+.margin40 {
+  margin: 0 0.53rem;
+}
+.info-more-btn {
+  height: 0.85rem;
+  margin: 0.48rem;
+  border: solid 1px #3685e5;
+  font-size: 0.32rem;
+  line-height: 0.85rem;
+  color: #3685e5;
+  border-radius: 0.07rem;
+  cursor: pointer;
+}
+.info-more-btn span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.info-more-btn .icon-ctl {
+  display: inline-block;
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-left: 0.2rem;
+  background: url(../images/arrow_cdown.png) no-repeat center;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+.info-more-btn.active {
+  background: #3685e5;
+  color: #ffffff;
+}
+.info-more-btn.active .icon-ctl {
+  background-image: url(../images/arrow_cup.png);
+}
+.info-more-con {
+  width: 8.07rem;
+  margin: 0 auto;
+  padding-bottom: 0.6rem;
+}
+.info-more-con table {
+  border: solid 1px #e1e6ed;
+}
+.info-more-con table th {
+  border-top: 0;
+}
+.more-info {
+  overflow: hidden;
+}
+.more-info.shadow {
+  background: url(../images/shadow.png) repeat-x top center #fff;
+  margin-top: 0.48rem;
+}
+.appendix-info {
+  background: url(../images/shadow.png) repeat-x top center #fff;
+}
+.appendix-info h3 {
+  font-size: 0.32rem;
+  color: #333;
+  padding: 0.53rem 0.53rem 0.4rem;
+  text-align: left;
+}
+.icon-plus {
+  display: inline-block;
+  width: 0.32rem;
+  height: 0.32rem;
+  background: url(../images/plus.png) no-repeat center;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+.icon-plus.active {
+  background-image: url(../images/mul.png);
+}
+.table-normal .city-name {
+  display: inline-block;
+  width: 3em;
+  vertical-align: middle;
+  margin-left: 0.13rem;
+  line-height: 1.2;
+  padding: 0.2rem 0;
+}
+.table-normal tr.child {
+  display: none;
+  background: #f6f6f6;
+}
+.child-con {
+  margin-left: 0.47rem;
+  padding: 0.27rem 0;
+  text-align: left;
+  line-height: 1.5;
+  border-bottom: dashed 1px #ccc;
+}
+.child-con:last-child {
+  border-bottom: 0;
+}
+.child-option {
+  width: 15%;
+  color: #333;
+}
+.child-detail {
+  width: 85%;
+}
+.appendix-more {
+  padding: 0.4rem 0;
+  font-size: 0.32rem;
+  color: #757b82;
+}
+.appendix-more span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.appendix-more .icon-more {
+  display: inline-block;
+  width: 0.32rem;
+  height: 0.32rem;
+  background: url(../images/more.png) no-repeat center;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+.margin0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+.center {
+  text-align: center;
+}
+.nowidth {
+  width: auto;
+  overflow: hidden;
+}
+.color333 {
+  color: #333;
+}
+.application-info {
+  overflow: hidden;
+}
+.m53 {
+  margin: 0 0.53rem;
+}
+.table-icontips {
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+.table-icontips li {
+  display: inline-block;
+  margin-left: 0.4rem;
+}
+.table-icontips .icon,
+.apply-info .icon,
+.apply-num .icon {
+  display: inline-block;
+  width: 0.43rem;
+  height: 0.43rem;
+  vertical-align: middle;
+  background-size: 100% 100%;
+}
+.icon-web {
+  background-image: url(../images/web.png);
+}
+.icon-pc {
+  background-image: url(../images/pc.png);
+}
+.icon-phone {
+  background-image: url(../images/phone.png);
+}
+.table-icontips span,
+.apply-info span,
+.apply-num span {
+  display: inline-block;
+  color: #a1a4a8;
+  font-size: 0.29rem;
+  vertical-align: middle;
+}
+.apply-info {
+  padding-left: 0.33rem;
+  text-align: left;
+  border-bottom: solid 1px #e1e6ed;
+}
+.apply-info span,
+.apply-num span {
+  color: #757b82;
+}
+.apply-info:last-child {
+  border-bottom: 0;
+}
+.ml20 {
+  margin-left: 0.27rem;
+}
+.apply-num {
+  padding: 0.27rem 0.33rem;
+  text-align: left;
+  line-height: 1.2;
+}
+.apply-num li {
+  padding: 0.13rem 0;
+}
+.nobg {
+  background: none;
+}
+.pt039 {
+  padding-top: 0.39rem;
+}
+.new-item {
+  color: #757b82;
+}
+.new-item em {
+  color: #1cb935;
+}
+.result-item {
+  color: #3d4247;
+  line-height: 1.5;
+}
+.table-result {
+  margin-top: 0.4rem;
+}
+.table-result tr:nth-child(even) {
+  background: #fafafa;
+}
+.table-result td.item-row {
+  background: #fff;
+}
+.table-result .left {
+  padding-left: 0.4rem;
+  text-align: left;
+}
+.echart-container {
+  height: 4.73rem;
+  margin-top: -0.8rem;
+}
+.echart-container * {
+  font-size: 0.32rem !important;
+}
+.appendix-info h3.pl0 {
+  padding-left: 0;
+}
+.gra-left {
+  display: inline-block;
+  width: 2.27rem;
+  height: 2.27rem;
+  border-radius: 50%;
+  background: #e6f2fa;
+  color: #3685e5;
+  line-height: 1.5;
+  vertical-align: middle;
+  text-align: center;
+}
+.gra-left em {
+  display: block;
+  padding-top: 0.4rem;
+  font-size: 0.48rem;
+}
+.gra-right {
+  margin-left: 0.47rem;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 2;
+}
+.left {
+  text-align: left;
+}
+.apply-tab {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  background: #fff;
+  border-bottom: solid 1px #e5e5e5;
+}
+.apply-tab li {
+  display: block;
+  font-size: 0.32rem;
+  color: #757b82;
+  line-height: 1.4;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+}
+.apply-tab li > div {
+  display: inline-block;
+  padding: 0.33rem 0.2rem;
+}
+.apply-tab li.current > div {
+  color: #3987e5;
+  border-bottom: solid 0.05rem #3685e5;
+}
+.apply-tab em {
+  display: block;
+}
+.mt047 {
+  margin-top: 0.47rem;
+}
+.pt053 {
+  padding-top: 0.53rem;
+}

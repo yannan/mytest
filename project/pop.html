@@ -13,7 +13,7 @@
    		<div class="pop-main">
    			<dl class="pop-add-list">
    				<dt class="pop-add-tit">
-   					<h3>必填信息<em></em></h3>
+   					<h3>必填信息<em></em><i class="icon-arrow"></i></h3>
    				</dt>
    				<dd>
 					<ul class="pop-form clearfix">
@@ -40,9 +40,9 @@
 					</ul>
 				</dd>
 				<dt class="pop-add-tit">
-   					<h3>选填信息<em></em></h3>
+   					<h3>选填信息<em></em><i class="icon-arrow icon-arrow-down"></i></h3>
    				</dt>
-   				<dd>
+   				<dd style="display: none">
 					<ul class="pop-form clearfix">
 						<li>
 							<label for="">部门</label>
@@ -99,6 +99,10 @@
 			cursorborder:"1px solid #d9d9de",
 			cursorborderradius:"0"
 		});
+		$('.pop-add-tit').click(function() {
+			$(this).find('.icon-arrow').toggleClass('icon-arrow-down');
+			$(this).next('dd').toggle(300);
+		})
 	</script>
 </body>
 </html>

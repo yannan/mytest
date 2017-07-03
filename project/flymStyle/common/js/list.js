@@ -1,4 +1,13 @@
 ;(function() {
+    //    数据统计菜单切换
+    $('body').on('click', '.tj-item-page li', function () {
+        var index = $(this).index();
+        $('.tj-item-page li').removeClass('current');
+        $(this).addClass('current');
+        $('.tj-item').hide();
+        $('.tj-item').eq(index).show();
+    });
+
     //checkbox处理
     $('body').on('click', '.checkbox-label input', function () {
         if($(this).parents('.checkbox-label').is('#selectAlltd')) {
@@ -62,7 +71,7 @@
     //滚动条美化
     $('.list-table-scroll').niceScroll({
         cursorcolor:"#e4e4ea",
-        cursoropacitymin:1,
+        cursoropacitymin:0.6,
         cursoropacitymax:1,
         touchbehavior:false,
         cursorwidth:"10px",
@@ -110,6 +119,28 @@
             shadeClose: true,
             content: '../pop.html'
         });
-    })
+    });
+
+//    表头箭头切换
+    var clickTime = 0;
+    $('.list-table th').click(function (event) {
+        var e = event || window.event;
+        if(e.target.nodeName.toLowerCase() != 'span') {
+            $('.list-table .arrow').hide();
+            $(this).find('.arrow').hide().eq(clickTime % 2).show();
+            clickTime++;
+        }
+    });
+
+    //表格横向滚动处理
+
+    $('.list-table-scroll').scroll(function() {
+        $('.list-table-container').scrollLeft($('.list-table-scroll').scrollLeft());
+    });
+
+    var tableRow = $('.list-table-hd th:visible').length;
+    var tableWidth = tableRow * 10 + "%";
+    $('.list-table table').width(tableWidth);
+    console.log(tableRow);
 
 })();
